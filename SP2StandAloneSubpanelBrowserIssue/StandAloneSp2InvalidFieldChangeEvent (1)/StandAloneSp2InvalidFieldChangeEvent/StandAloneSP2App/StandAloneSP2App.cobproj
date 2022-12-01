@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>7.0.122</ProductVersion>
+    <SchemaVersion>4.0</SchemaVersion>
+    <ProjectGuid>{c01e108b-1763-409d-8c16-345a7fc6317e}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GSSERP</RootNamespace>
+    <AssemblyName>GSSERP.SP2TEST</AssemblyName>
+    <MainEntryPoint>GSSERP.SP2TEST</MainEntryPoint>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <ReferencePath>$(MSBuildProjectDirectory)</ReferencePath>
+    <ApplicationIcon />
+    <ApplicationManifest />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <OutputPath>bin\Debug\</OutputPath>
+    <AdditionalOptions>/wc:"DLOAD,MESSAGE,SOURCE,CHECK(BOUND),COPY,INITVALUE(00),DECIMAL(88)"</AdditionalOptions>
+    <PlatformTarget>x86</PlatformTarget>
+    <StartWorkingDirectory>\\gss2k19bugscur2\apps\03U\SP2</StartWorkingDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <OutputPath>bin\Release\</OutputPath>
+    <AdditionalOptions>/wc:"DLOAD,MESSAGE,SOURCE,CHECK(BOUND),COPY,INITVALUE(00),DECIMAL(88)"</AdditionalOptions>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <!---->
+    <Reference Include="System.Core" />
+    <!---->
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cob" />
+    <Compile Include="Properties\AssemblyInfo.cob" />
+  </ItemGroup>
+  <!---->
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <CopyBookFile Include="PPSM001.SP2" />
+    <CopyBookFile Include="PPSMHLD1.SP2" />
+    <CopyBookFile Include="PPSTCOM.SP2" />
+    <CopyBookFile Include="PPSTOPT.SP2" />
+    <CopyBookFile Include="SP2.CPY" />
+    <CopyBookFile Include="SP2NET.CPY" />
+  </ItemGroup>
+  <!---->
+  <Import Project="$(MSBuildExtensionsPath)\Fujitsu\NetCOBOL for .NET\V7.0\Fujitsu.COBOL.targets" />
+  <!--
+	To modify your build process, add your task inside one of the targets below and uncomment it. 
+	Other similar extension points exist, see Fujitsu.COBOL.targets.
+	<Target Name="BeforeBuild">
+	</Target>
+	<Target Name="AfterBuild">
+	</Target>
+	-->
+</Project>

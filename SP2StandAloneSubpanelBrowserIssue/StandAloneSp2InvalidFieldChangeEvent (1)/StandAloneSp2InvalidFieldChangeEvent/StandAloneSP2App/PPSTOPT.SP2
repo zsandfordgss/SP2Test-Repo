@@ -1,0 +1,1766 @@
+      ********************************
+      * parameter for CONVERSE-PANEL *
+      * parameter for GET-INPUT      *
+      ********************************
+       01  PPSTOPT-CONVERSE-DATA.
+           05  PPSTOPT-RET-CODE
+                                       PIC S9(4) COMP-5.
+           05  PPSTOPT-LENS.
+               10  PPSTOPT-LEN-LEN
+                                       PIC S9(4) COMP-5 VALUE +20.
+               10  PPSTOPT-IP-NUM-LEN
+                                       PIC S9(4) COMP-5 VALUE +40.
+               10  PPSTOPT-IP-CHAR-LEN
+                                       PIC S9(4) COMP-5 VALUE +122.
+               10  PPSTOPT-OP-NUM-LEN
+                                       PIC S9(4) COMP-5 VALUE +6.
+               10  PPSTOPT-OP-CHAR-LEN
+                                       PIC S9(4) COMP-5 VALUE +2.
+               10  PPSTOPT-FIELD-LEN
+                                       PIC S9(4) COMP-5 VALUE +289.
+               10  PPSTOPT-COLR-LEN
+                                       PIC S9(4) COMP-5 VALUE +67.
+               10  PPSTOPT-TYPE-LEN
+                                       PIC S9(4) COMP-5 VALUE +67.
+               10  FILLER
+                                       PIC S9(4) COMP-5 VALUE +0.
+               10  FILLER
+                                       PIC S9(4) COMP-5 VALUE +0.
+           05  PPSTOPT-DATA.
+      ******** PPSTOPT-IP-NUM-DATA ********
+               10  PPSTOPT-KEY
+                                       PIC S9(4) COMP-5.
+                   88  PPSTOPT-PRICE-CATG-BRWS-HIT
+                                       VALUE 383.
+                   88  PPSTOPT-DN-ARROW-CURR-HIT
+                                       VALUE 380.
+                   88  PPSTOPT-DN-ARROW-CTLGCURR-HIT
+                                       VALUE 381.
+                   88  PPSTOPT-DN-ARROW-LANG-HIT
+                                       VALUE 382.
+                   88  PPSTOPT-CL-DN-ARROW-HIT
+                                       VALUE 502.
+                   88  PPSTOPT-SLM-DWN-ARW-HIT
+                                       VALUE 384.
+                   88  PPSTOPT-LOC-DN-ARW-HIT
+                                       VALUE 368.
+                   88  PPSTOPT-VIA-DWN-ARW-HIT
+                                       VALUE 385.
+                   88  PPSTOPT-GL-DN-ARROW-HIT
+                                       VALUE 386.
+                   88  PPSTOPT-QUOTE-DWN-ARW-HIT
+                                       VALUE 387.
+                   88  PPSTOPT-ZONE-BRWS-HIT
+                                       VALUE 388.
+                   88  PPSTOPT-CMN-DN-ARROW-HIT
+                                       VALUE 501.
+                   88  PPSTOPT-CARRIER-DWN-ARW-HIT
+                                       VALUE 389.
+                   88  PPSTOPT-CRM-BRWSER-HIT
+                                       VALUE 503.
+               10  PPSTOPT-NEXT-FLD-ID
+                                       PIC S9(4) COMP-5.
+               10  PPSTOPT-NEXT-FLD-NUM
+                                       PIC S9(4) COMP-5.
+               10  PPSTOPT-NEXT-TAB-NUM
+                                       PIC S9(4) COMP-5.
+               10  PPSTOPT-NEXT-OCCURS
+                                       PIC S9(4) COMP-5.
+               10  PPSTOPT-LAST-FLD-ID
+                                       PIC S9(4) COMP-5.
+               10  PPSTOPT-LAST-FLD-NUM
+                                       PIC S9(4) COMP-5.
+               10  PPSTOPT-LAST-TAB-NUM
+                                       PIC S9(4) COMP-5.
+               10  PPSTOPT-LAST-OCCURS
+                                       PIC S9(4) COMP-5.
+               10  PPSTOPT-MENU-ID
+                                       PIC S9(4) COMP-5.
+               10  PPSTOPT-ROW-COL-SW
+                                       PIC S9(4) COMP-5.
+               10  PPSTOPT-CURSOR-ROW
+                                       PIC S9(4) COMP-5.
+               10  PPSTOPT-CURSOR-COL
+                                       PIC S9(4) COMP-5.
+               10  PPSTOPT-LAST-ROW
+                                       PIC S9(4) COMP-5.
+               10  PPSTOPT-LAST-COL
+                                       PIC S9(4) COMP-5.
+               10  PPSTOPT-DISP-SW
+                                       PIC S9(4) COMP-5.
+               10  PPSTOPT-NEXT-VERT
+                                       PIC S9(4) COMP-5.
+               10  PPSTOPT-LAST-VERT
+                                       PIC S9(4) COMP-5.
+               10  PPSTOPT-NEXT-HOR
+                                       PIC S9(4) COMP-5.
+               10  PPSTOPT-LAST-HOR
+                                       PIC S9(4) COMP-5.
+      ******** PPSTOPT-IP-CHAR-DATA ********
+               10  PPSTOPT-NEXT-PANEL
+                                       PIC X(8).
+               10  PPSTOPT-NEXT-FIELD
+                                       PIC X(30).
+               10  PPSTOPT-LAST-FIELD
+                                       PIC X(30).
+               10  PPSTOPT-MENU-OPTION
+                                       PIC X(30).
+               10  PPSTOPT-SWITCH-SW
+                                       PIC X.
+               10  PPSTOPT-SIZE-SW
+                                       PIC X.
+               10  PPSTOPT-MOUSE-SW
+                                       PIC X.
+               10  PPSTOPT-CAPTURE-SW
+                                       PIC X.
+               10  PPSTOPT-WAIT-SW
+                                       PIC X.
+               10  PPSTOPT-CURS-SW
+                                       PIC X.
+               10  PPSTOPT-CHG-SW
+                                       PIC X.
+               10  PPSTOPT-TIMEOUT
+                                       PIC X.
+               10  PPSTOPT-NEXT-SUBPANEL
+                                       PIC X(8).
+               10  PPSTOPT-LAST-SUBPANEL
+                                       PIC X(8).
+      ******** PPSTOPT-OP-NUM-DATA ********
+               10  PPSTOPT-PAN-POS-SW
+                                       PIC S9(4) COMP-5.
+               10  PPSTOPT-PAN-ROW
+                                       PIC S9(4) COMP-5.
+               10  PPSTOPT-PAN-COL
+                                       PIC S9(4) COMP-5.
+      ******** PPSTOPT-OP-CHAR-DATA ********
+               10  PPSTOPT-NEW-WINDOW
+                                       PIC X.
+               10  PPSTOPT-DISPLAY-SW
+                                       PIC X.
+      ******** PPSTOPT-OP-VAR-DATA ********
+           05  PPSTOPT-FIELDS.
+             08  PPSTOPT-SUBFIELDS.
+               10  PPSTOPT-ALPHA-SORT
+                                       PIC X(00030).
+               10  PPSTOPT-CURRENCY
+                                       PIC X(00003).
+               10  PPSTOPT-CATLG-CURR
+                                       PIC X(00003).
+               10  PPSTOPT-LANG-CD
+                                       PIC X(00003).
+               10  PPSTOPT-SIC
+                                       PIC X(00004).
+               10  PPSTOPT-PRICE-CATG
+                                       PIC X(00002).
+               10  PPSTOPT-CFG-DISCOUNT
+                                       PIC 9(01)V9(04).
+               10  PPSTOPT-GROUP-SEQ-QUOTE
+                                       PIC X(00001).
+                   88  PPSTOPT-GROUP-SEQ-QUOTE-YES
+                                       VALUE "1".
+                   88  PPSTOPT-GROUP-SEQ-QUOTE-NO
+                                       VALUE "0".
+               10  PPSTOPT-SORT
+                                       PIC X(00015).
+               10  PPSTOPT-SLM
+                                       PIC X(00030).
+               10  PPSTOPT-LOC
+                                       PIC X(00002).
+               10  PPSTOPT-AREA
+                                       PIC X(00002).
+               10  PPSTOPT-TRTY
+                                       PIC X(00002).
+               10  PPSTOPT-SHIP-VIA
+                                       PIC X(00020).
+               10  PPSTOPT-GL
+                                       PIC X(00015).
+               10  PPSTOPT-CREDIT-LIMIT
+                                       PIC 9(007).
+               10  PPSTOPT-TERMS
+                                       PIC X(00010).
+               10  PPSTOPT-QUOTE-ID
+                                       PIC 9(006).
+               10  PPSTOPT-FRT-ZONE
+                                       PIC X(00010).
+               10  PPSTOPT-EXTERNAL-ID
+                                       PIC X(00012).
+               10  PPSTOPT-FOB-message
+                                       PIC X(00015).
+               10  PPSTOPT-COMM-R
+                                       PIC X(00005).
+               10  PPSTOPT-CRM-RESTR-LEV
+                                       PIC X(00020).
+               10  PPSTOPT-CARRIER
+                                       PIC X(00006).
+               10  PPSTOPT-SERVICE-TYPE
+                                       PIC 9(003).
+               10  PPSTOPT-SERVICE-DESC
+                                       PIC X(00050).
+               10  PPSTOPT-CRM-USR-GRP
+                                       PIC X(00008).
+           05  PPSTOPT-COLRS.
+             08  PPSTOPT-SUBCOLRS.
+               10  PPSTOPT-LBL-Catalog-C
+                                       PIC X.
+               10  PPSTOPT-LBL-Category-C
+                                       PIC X.
+               10  PPSTOPT-LBL-Configurator-C
+                                       PIC X.
+               10  PPSTOPT-LBL-Currency001-C
+                                       PIC X.
+               10  PPSTOPT-LBL-Alpha-Sort-C
+                                       PIC X.
+               10  PPSTOPT-LBL-Language-C
+                                       PIC X.
+               10  PPSTOPT-LBL-SIC-C
+                                       PIC X.
+               10  PPSTOPT-PRICE-CATG-BRWS-C
+                                       PIC X.
+               10  PPSTOPT-ALPHA-SORT-C
+                                       PIC X.
+               10  PPSTOPT-CURRENCY-C
+                                       PIC X.
+               10  PPSTOPT-DN-ARROW-CURR-C
+                                       PIC X.
+               10  PPSTOPT-CATLG-CURR-C
+                                       PIC X.
+               10  PPSTOPT-DN-ARROW-CTLGCURR-C
+                                       PIC X.
+               10  PPSTOPT-LANG-CD-C
+                                       PIC X.
+               10  PPSTOPT-DN-ARROW-LANG-C
+                                       PIC X.
+               10  PPSTOPT-SIC-C
+                                       PIC X.
+               10  PPSTOPT-PRICE-CATG-C
+                                       PIC X.
+               10  PPSTOPT-CFG-DISCOUNT-C
+                                       PIC X.
+               10  PPSTOPT-GROUP-SEQ-QUOTE-C
+                                       PIC X.
+               10  PPSTOPT-LBL-GROUP-SEQ-QUOTE-C
+                                       PIC X.
+               10  PPSTOPT-LBL-CREDIT-LIMIT-C
+                                       PIC X.
+               10  PPSTOPT-LBL-Normal-GL-Accoun-C
+                                       PIC X.
+               10  PPSTOPT-LBL-Sort-C
+                                       PIC X.
+               10  PPSTOPT-LBL-Sales-Rep-C
+                                       PIC X.
+               10  PPSTOPT-LBL-DEFLT-LOC-C
+                                       PIC X.
+               10  PPSTOPT-LBL-Area-C
+                                       PIC X.
+               10  PPSTOPT-LBL-Branch-C
+                                       PIC X.
+               10  PPSTOPT-LBL-Ship-Via-C
+                                       PIC X.
+               10  PPSTOPT-CL-DN-ARROW-C
+                                       PIC X.
+               10  PPSTOPT-SORT-C
+                                       PIC X.
+               10  PPSTOPT-SLM-C
+                                       PIC X.
+               10  PPSTOPT-SLM-DWN-ARW-C
+                                       PIC X.
+               10  PPSTOPT-LOC-C
+                                       PIC X.
+               10  PPSTOPT-LOC-DN-ARW-C
+                                       PIC X.
+               10  PPSTOPT-AREA-C
+                                       PIC X.
+               10  PPSTOPT-TRTY-C
+                                       PIC X.
+               10  PPSTOPT-SHIP-VIA-C
+                                       PIC X.
+               10  PPSTOPT-VIA-DWN-ARW-C
+                                       PIC X.
+               10  PPSTOPT-GL-C
+                                       PIC X.
+               10  PPSTOPT-GL-DN-ARROW-C
+                                       PIC X.
+               10  PPSTOPT-CREDIT-LIMIT-C
+                                       PIC X.
+               10  PPSTOPT-LBL-Terms-C
+                                       PIC X.
+               10  PPSTOPT-LBL-bi-quote-C
+                                       PIC X.
+               10  PPSTOPT-LBL-Freight-Zone-C
+                                       PIC X.
+               10  PPSTOPT-LBL-EXTERNAL-ID-C
+                                       PIC X.
+               10  PPSTOPT-LBL-Ship-FOB-Message-C
+                                       PIC X.
+               10  PPSTOPT-LBL-Commission-C
+                                       PIC X.
+               10  PPSTOPT-TERMS-C
+                                       PIC X.
+               10  PPSTOPT-QUOTE-ID-C
+                                       PIC X.
+               10  PPSTOPT-QUOTE-DWN-ARW-C
+                                       PIC X.
+               10  PPSTOPT-FRT-ZONE-C
+                                       PIC X.
+               10  PPSTOPT-ZONE-BRWS-C
+                                       PIC X.
+               10  PPSTOPT-EXTERNAL-ID-C
+                                       PIC X.
+               10  PPSTOPT-FOB-message-C
+                                       PIC X.
+               10  PPSTOPT-COMM-R-C
+                                       PIC X.
+               10  PPSTOPT-CMN-DN-ARROW-C
+                                       PIC X.
+               10  PPSTOPT-LBL-CARRIER-C
+                                       PIC X.
+               10  PPSTOPT-LBL-SERVICE-TYPE-C
+                                       PIC X.
+               10  PPSTOPT-LBL-CRM-RESTR-LEV-C
+                                       PIC X.
+               10  PPSTOPT-LBL-CRM-USR-GRP-C
+                                       PIC X.
+               10  PPSTOPT-CRM-RESTR-LEV-C
+                                       PIC X.
+               10  PPSTOPT-CARRIER-C
+                                       PIC X.
+               10  PPSTOPT-CARRIER-DWN-ARW-C
+                                       PIC X.
+               10  PPSTOPT-SERVICE-TYPE-C
+                                       PIC X.
+               10  PPSTOPT-SERVICE-DESC-C
+                                       PIC X.
+               10  PPSTOPT-CRM-USR-GRP-C
+                                       PIC X.
+               10  PPSTOPT-CRM-BRWSER-C
+                                       PIC X.
+             08  FILLER REDEFINES PPSTOPT-SUBCOLRS.
+               10  PPSTOPT-C OCCURS 67
+                                       PIC X.
+           05  PPSTOPT-TYPES.
+             08  PPSTOPT-SUBTYPES.
+               10  PPSTOPT-LBL-Catalog-T
+                                       PIC X.
+               10  PPSTOPT-LBL-Category-T
+                                       PIC X.
+               10  PPSTOPT-LBL-Configurator-T
+                                       PIC X.
+               10  PPSTOPT-LBL-Currency001-T
+                                       PIC X.
+               10  PPSTOPT-LBL-Alpha-Sort-T
+                                       PIC X.
+               10  PPSTOPT-LBL-Language-T
+                                       PIC X.
+               10  PPSTOPT-LBL-SIC-T
+                                       PIC X.
+               10  PPSTOPT-PRICE-CATG-BRWS-T
+                                       PIC X.
+               10  PPSTOPT-ALPHA-SORT-T
+                                       PIC X.
+               10  PPSTOPT-CURRENCY-T
+                                       PIC X.
+               10  PPSTOPT-DN-ARROW-CURR-T
+                                       PIC X.
+               10  PPSTOPT-CATLG-CURR-T
+                                       PIC X.
+               10  PPSTOPT-DN-ARROW-CTLGCURR-T
+                                       PIC X.
+               10  PPSTOPT-LANG-CD-T
+                                       PIC X.
+               10  PPSTOPT-DN-ARROW-LANG-T
+                                       PIC X.
+               10  PPSTOPT-SIC-T
+                                       PIC X.
+               10  PPSTOPT-PRICE-CATG-T
+                                       PIC X.
+               10  PPSTOPT-CFG-DISCOUNT-T
+                                       PIC X.
+               10  PPSTOPT-GROUP-SEQ-QUOTE-T
+                                       PIC X.
+               10  PPSTOPT-LBL-GROUP-SEQ-QUOTE-T
+                                       PIC X.
+               10  PPSTOPT-LBL-CREDIT-LIMIT-T
+                                       PIC X.
+               10  PPSTOPT-LBL-Normal-GL-Accoun-T
+                                       PIC X.
+               10  PPSTOPT-LBL-Sort-T
+                                       PIC X.
+               10  PPSTOPT-LBL-Sales-Rep-T
+                                       PIC X.
+               10  PPSTOPT-LBL-DEFLT-LOC-T
+                                       PIC X.
+               10  PPSTOPT-LBL-Area-T
+                                       PIC X.
+               10  PPSTOPT-LBL-Branch-T
+                                       PIC X.
+               10  PPSTOPT-LBL-Ship-Via-T
+                                       PIC X.
+               10  PPSTOPT-CL-DN-ARROW-T
+                                       PIC X.
+               10  PPSTOPT-SORT-T
+                                       PIC X.
+               10  PPSTOPT-SLM-T
+                                       PIC X.
+               10  PPSTOPT-SLM-DWN-ARW-T
+                                       PIC X.
+               10  PPSTOPT-LOC-T
+                                       PIC X.
+               10  PPSTOPT-LOC-DN-ARW-T
+                                       PIC X.
+               10  PPSTOPT-AREA-T
+                                       PIC X.
+               10  PPSTOPT-TRTY-T
+                                       PIC X.
+               10  PPSTOPT-SHIP-VIA-T
+                                       PIC X.
+               10  PPSTOPT-VIA-DWN-ARW-T
+                                       PIC X.
+               10  PPSTOPT-GL-T
+                                       PIC X.
+               10  PPSTOPT-GL-DN-ARROW-T
+                                       PIC X.
+               10  PPSTOPT-CREDIT-LIMIT-T
+                                       PIC X.
+               10  PPSTOPT-LBL-Terms-T
+                                       PIC X.
+               10  PPSTOPT-LBL-bi-quote-T
+                                       PIC X.
+               10  PPSTOPT-LBL-Freight-Zone-T
+                                       PIC X.
+               10  PPSTOPT-LBL-EXTERNAL-ID-T
+                                       PIC X.
+               10  PPSTOPT-LBL-Ship-FOB-Message-T
+                                       PIC X.
+               10  PPSTOPT-LBL-Commission-T
+                                       PIC X.
+               10  PPSTOPT-TERMS-T
+                                       PIC X.
+               10  PPSTOPT-QUOTE-ID-T
+                                       PIC X.
+               10  PPSTOPT-QUOTE-DWN-ARW-T
+                                       PIC X.
+               10  PPSTOPT-FRT-ZONE-T
+                                       PIC X.
+               10  PPSTOPT-ZONE-BRWS-T
+                                       PIC X.
+               10  PPSTOPT-EXTERNAL-ID-T
+                                       PIC X.
+               10  PPSTOPT-FOB-message-T
+                                       PIC X.
+               10  PPSTOPT-COMM-R-T
+                                       PIC X.
+               10  PPSTOPT-CMN-DN-ARROW-T
+                                       PIC X.
+               10  PPSTOPT-LBL-CARRIER-T
+                                       PIC X.
+               10  PPSTOPT-LBL-SERVICE-TYPE-T
+                                       PIC X.
+               10  PPSTOPT-LBL-CRM-RESTR-LEV-T
+                                       PIC X.
+               10  PPSTOPT-LBL-CRM-USR-GRP-T
+                                       PIC X.
+               10  PPSTOPT-CRM-RESTR-LEV-T
+                                       PIC X.
+               10  PPSTOPT-CARRIER-T
+                                       PIC X.
+               10  PPSTOPT-CARRIER-DWN-ARW-T
+                                       PIC X.
+               10  PPSTOPT-SERVICE-TYPE-T
+                                       PIC X.
+               10  PPSTOPT-SERVICE-DESC-T
+                                       PIC X.
+               10  PPSTOPT-CRM-USR-GRP-T
+                                       PIC X.
+               10  PPSTOPT-CRM-BRWSER-T
+                                       PIC X.
+             08  FILLER REDEFINES PPSTOPT-SUBTYPES.
+               10  PPSTOPT-T OCCURS 67
+                                       PIC X.
+      ************************************************
+      * field ids - use for cursor positioning, etc. *
+      ************************************************
+       01  PPSTOPT-IDS.
+           05  PPSTOPT-LBL-Catalog-I
+                                       PIC S9(4) COMP-5 VALUE +124.
+           05  PPSTOPT-LBL-Category-I
+                                       PIC S9(4) COMP-5 VALUE +107.
+           05  PPSTOPT-LBL-Configurator-I
+                                       PIC S9(4) COMP-5 VALUE +116.
+           05  PPSTOPT-LBL-Currency001-I
+                                       PIC S9(4) COMP-5 VALUE +122.
+           05  PPSTOPT-LBL-Alpha-Sort-I
+                                       PIC S9(4) COMP-5 VALUE +123.
+           05  PPSTOPT-LBL-Language-I
+                                       PIC S9(4) COMP-5 VALUE +118.
+           05  PPSTOPT-LBL-SIC-I
+                                       PIC S9(4) COMP-5 VALUE +121.
+           05  PPSTOPT-PRICE-CATG-BRWS-I
+                                       PIC S9(4) COMP-5 VALUE +60.
+           05  PPSTOPT-ALPHA-SORT-I
+                                       PIC S9(4) COMP-5 VALUE +22.
+           05  PPSTOPT-CURRENCY-I
+                                       PIC S9(4) COMP-5 VALUE +67.
+           05  PPSTOPT-DN-ARROW-CURR-I
+                                       PIC S9(4) COMP-5 VALUE +68.
+           05  PPSTOPT-CATLG-CURR-I
+                                       PIC S9(4) COMP-5 VALUE +69.
+           05  PPSTOPT-DN-ARROW-CTLGCURR-I
+                                       PIC S9(4) COMP-5 VALUE +70.
+           05  PPSTOPT-LANG-CD-I
+                                       PIC S9(4) COMP-5 VALUE +40.
+           05  PPSTOPT-DN-ARROW-LANG-I
+                                       PIC S9(4) COMP-5 VALUE +82.
+           05  PPSTOPT-SIC-I
+                                       PIC S9(4) COMP-5 VALUE +32.
+           05  PPSTOPT-PRICE-CATG-I
+                                       PIC S9(4) COMP-5 VALUE +59.
+           05  PPSTOPT-CFG-DISCOUNT-I
+                                       PIC S9(4) COMP-5 VALUE +8.
+           05  PPSTOPT-GROUP-SEQ-QUOTE-I
+                                       PIC S9(4) COMP-5 VALUE +78.
+           05  PPSTOPT-LBL-GROUP-SEQ-QUOTE-I
+                                       PIC S9(4) COMP-5 VALUE +153.
+           05  PPSTOPT-LBL-CREDIT-LIMIT-I
+                                       PIC S9(4) COMP-5 VALUE +12.
+           05  PPSTOPT-LBL-Normal-GL-Accoun-I
+                                       PIC S9(4) COMP-5 VALUE +7.
+           05  PPSTOPT-LBL-Sort-I
+                                       PIC S9(4) COMP-5 VALUE +1.
+           05  PPSTOPT-LBL-Sales-Rep-I
+                                       PIC S9(4) COMP-5 VALUE +113.
+           05  PPSTOPT-LBL-DEFLT-LOC-I
+                                       PIC S9(4) COMP-5 VALUE +75.
+           05  PPSTOPT-LBL-Area-I
+                                       PIC S9(4) COMP-5 VALUE +115.
+           05  PPSTOPT-LBL-Branch-I
+                                       PIC S9(4) COMP-5 VALUE +114.
+           05  PPSTOPT-LBL-Ship-Via-I
+                                       PIC S9(4) COMP-5 VALUE +109.
+           05  PPSTOPT-CL-DN-ARROW-I
+                                       PIC S9(4) COMP-5 VALUE +13.
+           05  PPSTOPT-SORT-I
+                                       PIC S9(4) COMP-5 VALUE +2.
+           05  PPSTOPT-SLM-I
+                                       PIC S9(4) COMP-5 VALUE +42.
+           05  PPSTOPT-SLM-DWN-ARW-I
+                                       PIC S9(4) COMP-5 VALUE +66.
+           05  PPSTOPT-LOC-I
+                                       PIC S9(4) COMP-5 VALUE +76.
+           05  PPSTOPT-LOC-DN-ARW-I
+                                       PIC S9(4) COMP-5 VALUE +77.
+           05  PPSTOPT-AREA-I
+                                       PIC S9(4) COMP-5 VALUE +34.
+           05  PPSTOPT-TRTY-I
+                                       PIC S9(4) COMP-5 VALUE +33.
+           05  PPSTOPT-SHIP-VIA-I
+                                       PIC S9(4) COMP-5 VALUE +80.
+           05  PPSTOPT-VIA-DWN-ARW-I
+                                       PIC S9(4) COMP-5 VALUE +81.
+           05  PPSTOPT-GL-I
+                                       PIC S9(4) COMP-5 VALUE +9.
+           05  PPSTOPT-GL-DN-ARROW-I
+                                       PIC S9(4) COMP-5 VALUE +10.
+           05  PPSTOPT-CREDIT-LIMIT-I
+                                       PIC S9(4) COMP-5 VALUE +11.
+           05  PPSTOPT-LBL-Terms-I
+                                       PIC S9(4) COMP-5 VALUE +111.
+           05  PPSTOPT-LBL-bi-quote-I
+                                       PIC S9(4) COMP-5 VALUE +6.
+           05  PPSTOPT-LBL-Freight-Zone-I
+                                       PIC S9(4) COMP-5 VALUE +93.
+           05  PPSTOPT-LBL-EXTERNAL-ID-I
+                                       PIC S9(4) COMP-5 VALUE +139.
+           05  PPSTOPT-LBL-Ship-FOB-Message-I
+                                       PIC S9(4) COMP-5 VALUE +94.
+           05  PPSTOPT-LBL-Commission-I
+                                       PIC S9(4) COMP-5 VALUE +3.
+           05  PPSTOPT-TERMS-I
+                                       PIC S9(4) COMP-5 VALUE +41.
+           05  PPSTOPT-QUOTE-ID-I
+                                       PIC S9(4) COMP-5 VALUE +71.
+           05  PPSTOPT-QUOTE-DWN-ARW-I
+                                       PIC S9(4) COMP-5 VALUE +72.
+           05  PPSTOPT-FRT-ZONE-I
+                                       PIC S9(4) COMP-5 VALUE +37.
+           05  PPSTOPT-ZONE-BRWS-I
+                                       PIC S9(4) COMP-5 VALUE +16.
+           05  PPSTOPT-EXTERNAL-ID-I
+                                       PIC S9(4) COMP-5 VALUE +140.
+           05  PPSTOPT-FOB-message-I
+                                       PIC S9(4) COMP-5 VALUE +27.
+           05  PPSTOPT-COMM-R-I
+                                       PIC S9(4) COMP-5 VALUE +4.
+           05  PPSTOPT-CMN-DN-ARROW-I
+                                       PIC S9(4) COMP-5 VALUE +5.
+           05  PPSTOPT-LBL-CARRIER-I
+                                       PIC S9(4) COMP-5 VALUE +15.
+           05  PPSTOPT-LBL-SERVICE-TYPE-I
+                                       PIC S9(4) COMP-5 VALUE +19.
+           05  PPSTOPT-LBL-CRM-RESTR-LEV-I
+                                       PIC S9(4) COMP-5 VALUE +21.
+           05  PPSTOPT-LBL-CRM-USR-GRP-I
+                                       PIC S9(4) COMP-5 VALUE +25.
+           05  PPSTOPT-CRM-RESTR-LEV-I
+                                       PIC S9(4) COMP-5 VALUE +23.
+           05  PPSTOPT-CARRIER-I
+                                       PIC S9(4) COMP-5 VALUE +14.
+           05  PPSTOPT-CARRIER-DWN-ARW-I
+                                       PIC S9(4) COMP-5 VALUE +17.
+           05  PPSTOPT-SERVICE-TYPE-I
+                                       PIC S9(4) COMP-5 VALUE +20.
+           05  PPSTOPT-SERVICE-DESC-I
+                                       PIC S9(4) COMP-5 VALUE +18.
+           05  PPSTOPT-CRM-USR-GRP-I
+                                       PIC S9(4) COMP-5 VALUE +24.
+           05  PPSTOPT-CRM-BRWSER-I
+                                       PIC S9(4) COMP-5 VALUE +26.
+       01  FILLER REDEFINES PPSTOPT-IDS.
+           05  PPSTOPT-I OCCURS 67
+                                       PIC S9(4) COMP-5.
+       01  PPSTOPT-COLR-MAX
+                                       PIC S9(4) COMP-5 VALUE 67.
+       01  PPSTOPT-TYPE-MAX
+                                       PIC S9(4) COMP-5 VALUE 67.
+       01  PPSTOPT-ID-MAX
+                                       PIC S9(4) COMP-5 VALUE 67.
+      **************************************************
+      * panel records for use with SET-RECORD function *
+      * panel generated from file X:\wip\pnl\prospect.pnl
+      **************************************************
+       01  PPSTOPT-PANEL-RECORD.
+           05  PPSTOPT-PN-RET-CODE PIC S9(4) COMP-5.
+           05  FILLER PIC X(8) VALUE "PPSTOPT".
+           05  FILLER PIC X(15) VALUE X"00000C00100100000000640286004E".
+           05  FILLER PIC X(15) VALUE X"0000000000AE3500004A3100001001".
+           05  FILLER PIC X(15) VALUE X"1E0030004C00740010000700240038".
+           05  FILLER PIC X(15) VALUE X"0000000000000000000000FFFF2800".
+           05  FILLER PIC X(15) VALUE X"6303FF001300260043004300210100".
+           05  FILLER PIC X(15) VALUE X"001B000000FFFF0000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000100010000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000505053544F50542000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000010000000100".
+           05  FILLER PIC X(15) VALUE X"0000740050524F5350454354204F50".
+           05  FILLER PIC X(15) VALUE X"54494F4E534F7074696F6E734B014D".
+           05  FILLER PIC X(15) VALUE X"014801500109000F01000000005301".
+           05  FILLER PIC X(15) VALUE X"08000000520147014F014901510173".
+           05  FILLER PIC X(15) VALUE X"0174010D001B00650166016C015E01".
+           05  FILLER PIC X(15) VALUE X"64016D016A016E016901700167017C".
+           05  FILLER PIC X(15) VALUE X"017D017E017F018001810182018301".
+           05  FILLER PIC X(15) VALUE X"8401F501F6018501F7013C013D0100".
+           05  FILLER PIC X(15) VALUE X"C8001E0034004A002A000600000014".
+           05  FILLER PIC X(15) VALUE X"0000000000000000000D000000FFFF".
+           05  FILLER PIC X(15) VALUE X"2C007C00FE04390000000000120035".
+           05  FILLER PIC X(15) VALUE X"01F803010000000100A40218012800".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000005".
+           05  FILLER PIC X(15) VALUE X"0000000000000000004C424C2D4361".
+           05  FILLER PIC X(15) VALUE X"74616C6F6700000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000007900000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"00000000000000000000000000006D".
+           05  FILLER PIC X(15) VALUE X"000000650000000258283034302943".
+           05  FILLER PIC X(15) VALUE X"6174616C6F672043757272656E6379".
+           05  FILLER PIC X(15) VALUE X"202020203030303132342C30393538".
+           05  FILLER PIC X(15) VALUE X"3030000000C6001E0034004A002800".
+           05  FILLER PIC X(15) VALUE X"06000000140000000000000000000D".
+           05  FILLER PIC X(15) VALUE X"000000FFFF2C006B00C60941000000".
+           05  FILLER PIC X(15) VALUE X"00001200F9017C0102000000020059".
+           05  FILLER PIC X(15) VALUE X"021801280000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"00000000050000000000000000004C".
+           05  FILLER PIC X(15) VALUE X"424C2D43617465676F727900000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"790000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000006D00000065000000025828".
+           05  FILLER PIC X(15) VALUE X"303430295072696365200D0A436174".
+           05  FILLER PIC X(15) VALUE X"65676F727920202020303030313037".
+           05  FILLER PIC X(15) VALUE X"2C34343839303000CA001E0034004A".
+           05  FILLER PIC X(15) VALUE X"002C00060000001800000000000000".
+           05  FILLER PIC X(15) VALUE X"00000D000000FFFF2C007400AA0959".
+           05  FILLER PIC X(15) VALUE X"000000000012003A021E0103000000".
+           05  FILLER PIC X(15) VALUE X"030053031801280000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000500000000000000".
+           05  FILLER PIC X(15) VALUE X"00004C424C2D436F6E666967757261".
+           05  FILLER PIC X(15) VALUE X"746F72000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000790000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000006D00000065000000".
+           05  FILLER PIC X(15) VALUE X"02582830343029436F6E6669677572".
+           05  FILLER PIC X(15) VALUE X"61746F720D0A446973636F756E740D".
+           05  FILLER PIC X(15) VALUE X"0A3030303131362C31323630303500".
+           05  FILLER PIC X(15) VALUE X"C6001E0034004A0028000600000014".
+           05  FILLER PIC X(15) VALUE X"0000000000000000000D000000FFFF".
+           05  FILLER PIC X(15) VALUE X"2C007A00DA0B3C00000000001F00F1".
+           05  FILLER PIC X(15) VALUE X"000A040400000004009C028C001400".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000005".
+           05  FILLER PIC X(15) VALUE X"0000000000000000004C424C2D4375".
+           05  FILLER PIC X(15) VALUE X"7272656E6379303031000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000007900000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000650000000258283032302943".
+           05  FILLER PIC X(15) VALUE X"757272656E63792020202020202020".
+           05  FILLER PIC X(15) VALUE X"202020203030303132322C31343832".
+           05  FILLER PIC X(15) VALUE X"303000C6001E0034004A0028000600".
+           05  FILLER PIC X(15) VALUE X"0000140000000000000000000D0000".
+           05  FILLER PIC X(15) VALUE X"00FFFF2C007B008003570000000000".
+           05  FILLER PIC X(15) VALUE X"20002200000405000000050058078C".
+           05  FILLER PIC X(15) VALUE X"001400000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"0000050000000000000000004C424C".
+           05  FILLER PIC X(15) VALUE X"2D416C7068612D536F727400000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000007900".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000650000000258283032".
+           05  FILLER PIC X(15) VALUE X"3029416C70686120536F7274202020".
+           05  FILLER PIC X(15) VALUE X"202020202020203030303132332C30".
+           05  FILLER PIC X(15) VALUE X"323734303000C6001E0034004A0028".
+           05  FILLER PIC X(15) VALUE X"000600000014000000000000000000".
+           05  FILLER PIC X(15) VALUE X"0D000000FFFF2C007600FA0C280000".
+           05  FILLER PIC X(15) VALUE X"00000020007D012A04060000000600".
+           05  FILLER PIC X(15) VALUE X"B2028C001400000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000005000000000000000000".
+           05  FILLER PIC X(15) VALUE X"4C424C2D4C616E6775616765000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"007900000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000650000000258".
+           05  FILLER PIC X(15) VALUE X"28303230294C616E67756167652020".
+           05  FILLER PIC X(15) VALUE X"202020202020202020203030303131".
+           05  FILLER PIC X(15) VALUE X"382C33313933303000C0001E003400".
+           05  FILLER PIC X(15) VALUE X"4A0022000600000014000000000000".
+           05  FILLER PIC X(15) VALUE X"00000006000000FFFF2C0079004E05".
+           05  FILLER PIC X(15) VALUE X"1500000000002000C6011204070000".
+           05  FILLER PIC X(15) VALUE X"0007003C018C001400000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000005000000000000".
+           05  FILLER PIC X(15) VALUE X"0000004C424C2D5349430000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000007900000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000650000".
+           05  FILLER PIC X(15) VALUE X"000258283032302953494320202020".
+           05  FILLER PIC X(15) VALUE X"202020202020202020202020203030".
+           05  FILLER PIC X(15) VALUE X"303132310000B8001E0034004A001A".
+           05  FILLER PIC X(15) VALUE X"000000000014000000000000000000".
+           05  FILLER PIC X(15) VALUE X"06000000FFFF2C003C000000000000".
+           05  FILLER PIC X(15) VALUE X"0000002E001202000008000A000800".
+           05  FILLER PIC X(15) VALUE X"AA009A0000000000000000007F0100".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"50524943452D434154472D42525753".
+           05  FILLER PIC X(15) VALUE X"202020202020202020202020202020".
+           05  FILLER PIC X(15) VALUE X"007000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000690000000078".
+           05  FILLER PIC X(15) VALUE X"78787878787878646F776E736D616C".
+           05  FILLER PIC X(15) VALUE X"2E626D70303030303630AA001E0034".
+           05  FILLER PIC X(15) VALUE X"004A000C0006000000000000000000".
+           05  FILLER PIC X(15) VALUE X"0000000006000000FFFF2C001600E2".
+           05  FILLER PIC X(15) VALUE X"033D00000000002F00220000000900".
+           05  FILLER PIC X(15) VALUE X"01000900B00790001E001E00000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000050000000000".
+           05  FILLER PIC X(15) VALUE X"00000000414C5048412D534F525420".
+           05  FILLER PIC X(15) VALUE X"202020202020202020202020202020".
+           05  FILLER PIC X(15) VALUE X"202020200000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"00000000000000000000006E006500".
+           05  FILLER PIC X(15) VALUE X"007400582830333029303030303232".
+           05  FILLER PIC X(15) VALUE X"AA001E0034004A000C000600000000".
+           05  FILLER PIC X(15) VALUE X"00000000000000000006000000FFFF".
+           05  FILLER PIC X(15) VALUE X"2C00430014075400000000002F00F1".
+           05  FILLER PIC X(15) VALUE X"001E000A0002000A00F80090000300".
+           05  FILLER PIC X(15) VALUE X"030000000000000000000000000005".
+           05  FILLER PIC X(15) VALUE X"00000000000000000043555252454E".
+           05  FILLER PIC X(15) VALUE X"435920202020202020202020202020".
+           05  FILLER PIC X(15) VALUE X"202020202020202020000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000610000000000000000".
+           05  FILLER PIC X(15) VALUE X"006E00650000740058283030332930".
+           05  FILLER PIC X(15) VALUE X"3030303637B8001E0034004A001A00".
+           05  FILLER PIC X(15) VALUE X"000000001400000000000000000006".
+           05  FILLER PIC X(15) VALUE X"000000FFFF2C004400000000000000".
+           05  FILLER PIC X(15) VALUE X"00002F000F01A1020B0003000B00B2".
+           05  FILLER PIC X(15) VALUE X"009A0000000000000000007C010000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000044".
+           05  FILLER PIC X(15) VALUE X"4E2D4152524F572D43555252202020".
+           05  FILLER PIC X(15) VALUE X"202020202020202020202020202000".
+           05  FILLER PIC X(15) VALUE X"700000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000069000000007878".
+           05  FILLER PIC X(15) VALUE X"787878787878646F776E736D616C2E".
+           05  FILLER PIC X(15) VALUE X"626D70303030303638AA001E003400".
+           05  FILLER PIC X(15) VALUE X"4A000C000600000000000000000000".
+           05  FILLER PIC X(15) VALUE X"00000006000000FFFF2C0045005603".
+           05  FILLER PIC X(15) VALUE X"7600000000002F00360121000C0004".
+           05  FILLER PIC X(15) VALUE X"000C00F80090000300030000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000005000000000000".
+           05  FILLER PIC X(15) VALUE X"0000004341544C472D435552522020".
+           05  FILLER PIC X(15) VALUE X"202020202020202020202020202020".
+           05  FILLER PIC X(15) VALUE X"202020000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"610000000000000000006E00650000".
+           05  FILLER PIC X(15) VALUE X"7400582830303329303030303639B8".
+           05  FILLER PIC X(15) VALUE X"001E0034004A001A00000000001400".
+           05  FILLER PIC X(15) VALUE X"000000000000000006000000FFFF2C".
+           05  FILLER PIC X(15) VALUE X"00460000000000000000002F005201".
+           05  FILLER PIC X(15) VALUE X"A1020D0005000D00B2009A00000000".
+           05  FILLER PIC X(15) VALUE X"00000000007D010000000000000000".
+           05  FILLER PIC X(15) VALUE X"0000000000000000444E2D4152524F".
+           05  FILLER PIC X(15) VALUE X"572D43544C47435552522020202020".
+           05  FILLER PIC X(15) VALUE X"202020202020202000700000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000069000000007878787878787878".
+           05  FILLER PIC X(15) VALUE X"646F776E736D616C2E626D70303030".
+           05  FILLER PIC X(15) VALUE X"303730AA001E0034004A000C000600".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000060000".
+           05  FILLER PIC X(15) VALUE X"00FFFF2C0028002609AA0000000000".
+           05  FILLER PIC X(15) VALUE X"2F007D0124000E0006000E00200190".
+           05  FILLER PIC X(15) VALUE X"000300030000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"0000050000000000000000004C414E".
+           05  FILLER PIC X(15) VALUE X"472D43442020202020202020202020".
+           05  FILLER PIC X(15) VALUE X"202020202020202020202020000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000075".
+           05  FILLER PIC X(15) VALUE X"000000006E00650000740058283030".
+           05  FILLER PIC X(15) VALUE X"3329303030303430B8001E0034004A".
+           05  FILLER PIC X(15) VALUE X"001A00000000001400000000000000".
+           05  FILLER PIC X(15) VALUE X"000006000000FFFF2C005200000000".
+           05  FILLER PIC X(15) VALUE X"00000000002F009D01A1020F000700".
+           05  FILLER PIC X(15) VALUE X"0F00B2009A0000000000000000007E".
+           05  FILLER PIC X(15) VALUE X"010000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"0000444E2D4152524F572D4C414E47".
+           05  FILLER PIC X(15) VALUE X"202020202020202020202020202020".
+           05  FILLER PIC X(15) VALUE X"202000700000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000069000000".
+           05  FILLER PIC X(15) VALUE X"007878787878787878646F776E736D".
+           05  FILLER PIC X(15) VALUE X"616C2E626D70303030303832AA001E".
+           05  FILLER PIC X(15) VALUE X"0034004A000C000600000000000000".
+           05  FILLER PIC X(15) VALUE X"00000000000006000000FFFF2C0020".
+           05  FILLER PIC X(15) VALUE X"00F4068200000000002F00C6012700".
+           05  FILLER PIC X(15) VALUE X"100008001000280190000400040000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000005000000".
+           05  FILLER PIC X(15) VALUE X"000000000000534943202020202020".
+           05  FILLER PIC X(15) VALUE X"202020202020202020202020202020".
+           05  FILLER PIC X(15) VALUE X"202020202020000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000006E00".
+           05  FILLER PIC X(15) VALUE X"650000740058283030342930303030".
+           05  FILLER PIC X(15) VALUE X"3332AA001E0034004A000C00060000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000006000000".
+           05  FILLER PIC X(15) VALUE X"FFFF2C003B0076021C00000000002F".
+           05  FILLER PIC X(15) VALUE X"00F9012B00110009001100C8009000".
+           05  FILLER PIC X(15) VALUE X"020002000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000500000000000000000050524943".
+           05  FILLER PIC X(15) VALUE X"452D43415447202020202020202020".
+           05  FILLER PIC X(15) VALUE X"202020202020202020202000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"00000000000000006D000000000000".
+           05  FILLER PIC X(15) VALUE X"0000006E0065000074005828303032".
+           05  FILLER PIC X(15) VALUE X"29303030303539AA001E0034004A00".
+           05  FILLER PIC X(15) VALUE X"0C0006000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"0006000000FFFF2C0008001A0D3900".
+           05  FILLER PIC X(15) VALUE X"000000002F003B022D0012000B0012".
+           05  FILLER PIC X(15) VALUE X"0072018C0006000500000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000050000000000000000".
+           05  FILLER PIC X(15) VALUE X"004346472D444953434F554E542020".
+           05  FILLER PIC X(15) VALUE X"202020202020202020202020202020".
+           05  FILLER PIC X(15) VALUE X"206E00000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000006172".
+           05  FILLER PIC X(15) VALUE X"000000000000000079796500007400".
+           05  FILLER PIC X(15) VALUE X"5A2E39393939303030303038B8001E".
+           05  FILLER PIC X(15) VALUE X"0034004A001A000600000001000000".
+           05  FILLER PIC X(15) VALUE X"00000200000006000000FFFF2C004E".
+           05  FILLER PIC X(15) VALUE X"00F6053100000000002F0073023200".
+           05  FILLER PIC X(15) VALUE X"13000C001300B400A0000100010000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000005000000".
+           05  FILLER PIC X(15) VALUE X"00000000000047524F55502D534551".
+           05  FILLER PIC X(15) VALUE X"2D51554F5445202020202020202020".
+           05  FILLER PIC X(15) VALUE X"202020202020000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"630000000058283030312930313030".
+           05  FILLER PIC X(15) VALUE X"30303037386F6D6572594E00000000".
+           05  FILLER PIC X(15) VALUE X"00CE001E0034004A00300006000000".
+           05  FILLER PIC X(15) VALUE X"1C0000000000000000000D000000FF".
+           05  FILLER PIC X(15) VALUE X"FF2C0099005E094200000000002F00".
+           05  FILLER PIC X(15) VALUE X"86020000140000001400FD03180132".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"050000000000000000004C424C2D47".
+           05  FILLER PIC X(15) VALUE X"524F55502D5345512D51554F544500".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000079000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"6D0000006500000002582830353029".
+           05  FILLER PIC X(15) VALUE X"5573652053696E676C652047726F75".
+           05  FILLER PIC X(15) VALUE X"70205365712051756F74696E673030".
+           05  FILLER PIC X(15) VALUE X"303135332C36363638303100C6001E".
+           05  FILLER PIC X(15) VALUE X"0034004A0028000600000014000000".
+           05  FILLER PIC X(15) VALUE X"0000000000000D000000FFFF2C000C".
+           05  FILLER PIC X(15) VALUE X"00900A3200000000004E0009032A04".
+           05  FILLER PIC X(15) VALUE X"150000001500EA0118011E00000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000005000000".
+           05  FILLER PIC X(15) VALUE X"0000000000004C424C2D4352454449".
+           05  FILLER PIC X(15) VALUE X"542D4C494D49542020202020202020".
+           05  FILLER PIC X(15) VALUE X"202020202020007900000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"00000000000000000000006D000000".
+           05  FILLER PIC X(15) VALUE X"650000000258283033302943726564".
+           05  FILLER PIC X(15) VALUE X"6974204C696D697420202020202020".
+           05  FILLER PIC X(15) VALUE X"203030303031322C31343638303000".
+           05  FILLER PIC X(15) VALUE X"C6001E0034004A0028000600000014".
+           05  FILLER PIC X(15) VALUE X"0000000000000000000D000000FFFF".
+           05  FILLER PIC X(15) VALUE X"2C000700AA082D00000000004F008E".
+           05  FILLER PIC X(15) VALUE X"022E011600000016007B0318012800".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000005".
+           05  FILLER PIC X(15) VALUE X"0000000000000000004C424C2D4E6F".
+           05  FILLER PIC X(15) VALUE X"726D616C2D474C2D4163636F756E20".
+           05  FILLER PIC X(15) VALUE X"202020202020202020007900000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"00000000000000000000000000006D".
+           05  FILLER PIC X(15) VALUE X"00000065000000025828303430294E".
+           05  FILLER PIC X(15) VALUE X"6F726D616C20472F4C204163636F75".
+           05  FILLER PIC X(15) VALUE X"6E7420203030303030372C33373538".
+           05  FILLER PIC X(15) VALUE X"303200CC001E0034004A002E000600".
+           05  FILLER PIC X(15) VALUE X"0000190000000000000000000D0000".
+           05  FILLER PIC X(15) VALUE X"00FFFF2C000100FA0B1A0000000000".
+           05  FILLER PIC X(15) VALUE X"5D002200000417000000170070038C".
+           05  FILLER PIC X(15) VALUE X"000F00000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"0000050000000000000000004C424C".
+           05  FILLER PIC X(15) VALUE X"2D536F727420202020202020202020".
+           05  FILLER PIC X(15) VALUE X"202020202020202020202020007900".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000650000000258283031".
+           05  FILLER PIC X(15) VALUE X"3529536F7274202020202020202020".
+           05  FILLER PIC X(15) VALUE X"202020202020202020202020303030".
+           05  FILLER PIC X(15) VALUE X"3030312C3538393430300000C8001E".
+           05  FILLER PIC X(15) VALUE X"0034004A002A000600000014000000".
+           05  FILLER PIC X(15) VALUE X"0000000000000D000000FFFF2C0071".
+           05  FILLER PIC X(15) VALUE X"003C0C1600000000005D0080009804".
+           05  FILLER PIC X(15) VALUE X"180000001800A8078C001400000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000005000000".
+           05  FILLER PIC X(15) VALUE X"0000000000004C424C2D53616C6573".
+           05  FILLER PIC X(15) VALUE X"2D5265700000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000007900000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"650000000258283032302953616C65".
+           05  FILLER PIC X(15) VALUE X"732052657020202020202020202020".
+           05  FILLER PIC X(15) VALUE X"203030303131332C35343536303100".
+           05  FILLER PIC X(15) VALUE X"0000C6001E0034004A002800060000".
+           05  FILLER PIC X(15) VALUE X"00140000000000000000000D000000".
+           05  FILLER PIC X(15) VALUE X"FFFF2C004B00240A4900000000005D".
+           05  FILLER PIC X(15) VALUE X"006501E502190000001900F2008C00".
+           05  FILLER PIC X(15) VALUE X"140000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"00050000000000000000004C424C2D".
+           05  FILLER PIC X(15) VALUE X"4445464C542D4C4F43202020202020".
+           05  FILLER PIC X(15) VALUE X"202020202020202020202000790000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000065000000025828303230".
+           05  FILLER PIC X(15) VALUE X"294C6F632020202020202020202020".
+           05  FILLER PIC X(15) VALUE X"2020202020203030303037352C3333".
+           05  FILLER PIC X(15) VALUE X"3332303100C6001E0034004A002800".
+           05  FILLER PIC X(15) VALUE X"06000000140000000000000000000D".
+           05  FILLER PIC X(15) VALUE X"000000FFFF2C007300700CB1000000".
+           05  FILLER PIC X(15) VALUE X"00005D0098017E041A0000001A00B8".
+           05  FILLER PIC X(15) VALUE X"018C00140000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"00000000050000000000000000004C".
+           05  FILLER PIC X(15) VALUE X"424C2D417265610000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"790000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000065000000025828".
+           05  FILLER PIC X(15) VALUE X"303230294172656120202020202020".
+           05  FILLER PIC X(15) VALUE X"202020202020202020303030313135".
+           05  FILLER PIC X(15) VALUE X"2C30333931303000C6001E0034004A".
+           05  FILLER PIC X(15) VALUE X"002800060000001400000000000000".
+           05  FILLER PIC X(15) VALUE X"00000D000000FFFF2C0072004A0836".
+           05  FILLER PIC X(15) VALUE X"00000000005D00C80182041B000000".
+           05  FILLER PIC X(15) VALUE X"1B00BE018C00140000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000500000000000000".
+           05  FILLER PIC X(15) VALUE X"00004C424C2D4272616E6368000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000790000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000065000000".
+           05  FILLER PIC X(15) VALUE X"025828303230294272616E63682020".
+           05  FILLER PIC X(15) VALUE X"202020202020202020202020303030".
+           05  FILLER PIC X(15) VALUE X"3131342C30373434303000C6001E00".
+           05  FILLER PIC X(15) VALUE X"34004A002800060000001400000000".
+           05  FILLER PIC X(15) VALUE X"00000000000D000000FFFF2C006D00".
+           05  FILLER PIC X(15) VALUE X"AC082600000000005D00F801F0041C".
+           05  FILLER PIC X(15) VALUE X"0000001C0008058C00140000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000500000000".
+           05  FILLER PIC X(15) VALUE X"00000000004C424C2D536869702D56".
+           05  FILLER PIC X(15) VALUE X"696100000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000790000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000065".
+           05  FILLER PIC X(15) VALUE X"000000025828303230295368697020".
+           05  FILLER PIC X(15) VALUE X"566961202020202020202020202020".
+           05  FILLER PIC X(15) VALUE X"3030303130392C35373632303100B8".
+           05  FILLER PIC X(15) VALUE X"001E0034004A001A00000000001400".
+           05  FILLER PIC X(15) VALUE X"000000000000000006000000FFFF2C".
+           05  FILLER PIC X(15) VALUE X"000D0000000000000000006B004803".
+           05  FILLER PIC X(15) VALUE X"37001D0018001D00AA009600000000".
+           05  FILLER PIC X(15) VALUE X"0000000000F6010000000000000000".
+           05  FILLER PIC X(15) VALUE X"0000000000000000434C2D444E2D41".
+           05  FILLER PIC X(15) VALUE X"52524F572020202020202020202020".
+           05  FILLER PIC X(15) VALUE X"202020202020202000700000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000069000000007878787878787878".
+           05  FILLER PIC X(15) VALUE X"646F776E736D616C2E626D70303030".
+           05  FILLER PIC X(15) VALUE X"303133AA001E0034004A000C000600".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000060000".
+           05  FILLER PIC X(15) VALUE X"00FFFF2C00020076082A0000000000".
+           05  FILLER PIC X(15) VALUE X"6D00220033001E000D001E00500390".
+           05  FILLER PIC X(15) VALUE X"000F000F0000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000005000000000000000000534F52".
+           05  FILLER PIC X(15) VALUE X"542020202020202020202020202020".
+           05  FILLER PIC X(15) VALUE X"202020202020202020202020000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000006E00650000740058283031".
+           05  FILLER PIC X(15) VALUE X"3529303030303032AA001E0034004A".
+           05  FILLER PIC X(15) VALUE X"000C00060000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000006000000FFFF2C002A00820614".
+           05  FILLER PIC X(15) VALUE X"00000000006D00800042001F000E00".
+           05  FILLER PIC X(15) VALUE X"1F00B00790001E001E000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000500000000000000".
+           05  FILLER PIC X(15) VALUE X"0000534C4D20202020202020202020".
+           05  FILLER PIC X(15) VALUE X"202020202020202020202020202020".
+           05  FILLER PIC X(15) VALUE X"202000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"0000000000000000006E0065000074".
+           05  FILLER PIC X(15) VALUE X"00582830333029303030303432B800".
+           05  FILLER PIC X(15) VALUE X"1E0034004A001A0000000000140000".
+           05  FILLER PIC X(15) VALUE X"0000000000000006000000FFFF2C00".
+           05  FILLER PIC X(15) VALUE X"420000000000000000006D004901A1".
+           05  FILLER PIC X(15) VALUE X"0220000F002000B2009A0000000000".
+           05  FILLER PIC X(15) VALUE X"000000008001000000000000000000".
+           05  FILLER PIC X(15) VALUE X"00000000000000534C4D2D44574E2D".
+           05  FILLER PIC X(15) VALUE X"415257202020202020202020202020".
+           05  FILLER PIC X(15) VALUE X"202020202020200070000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"006900000000787878787878787864".
+           05  FILLER PIC X(15) VALUE X"6F776E736D616C2E626D7030303030".
+           05  FILLER PIC X(15) VALUE X"3636AA001E0034004A000C00050000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000006000000".
+           05  FILLER PIC X(15) VALUE X"FFFF2C004C0094022000000000006D".
+           05  FILLER PIC X(15) VALUE X"0064016000210010002100D2009600".
+           05  FILLER PIC X(15) VALUE X"020002000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"00050000000000000000004C4F4320".
+           05  FILLER PIC X(15) VALUE X"202020202020202020202020202020".
+           05  FILLER PIC X(15) VALUE X"202020202020202020202000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"00000000000000006D000000000000".
+           05  FILLER PIC X(15) VALUE X"0000006E0065000074005828303229".
+           05  FILLER PIC X(15) VALUE X"30303030373600B8001E0034004A00".
+           05  FILLER PIC X(15) VALUE X"1A0000000000140000000000000000".
+           05  FILLER PIC X(15) VALUE X"0006000000FFFF2C004D0000000000".
+           05  FILLER PIC X(15) VALUE X"000000006D008101F6022200110022".
+           05  FILLER PIC X(15) VALUE X"00AA00960000000000000000007001".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"004C4F432D444E2D41525720202020".
+           05  FILLER PIC X(15) VALUE X"202020202020202020202020202020".
+           05  FILLER PIC X(15) VALUE X"200070000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000006900000000".
+           05  FILLER PIC X(15) VALUE X"7878787878787878646F776E736D61".
+           05  FILLER PIC X(15) VALUE X"6C2E626D70303030303737AA001E00".
+           05  FILLER PIC X(15) VALUE X"34004A000C00050000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000006000000FFFF2C002200".
+           05  FILLER PIC X(15) VALUE X"3A053A00000000006D009801620023".
+           05  FILLER PIC X(15) VALUE X"0012002300D0009000020002000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000500000000".
+           05  FILLER PIC X(15) VALUE X"000000000041524541202020202020".
+           05  FILLER PIC X(15) VALUE X"202020202020202020202020202020".
+           05  FILLER PIC X(15) VALUE X"202020202000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"0000000000000000000000006E0065".
+           05  FILLER PIC X(15) VALUE X"000074005828303229303030303334".
+           05  FILLER PIC X(15) VALUE X"00AA001E0034004A000C0005000000".
+           05  FILLER PIC X(15) VALUE X"0000000000000000000006000000FF".
+           05  FILLER PIC X(15) VALUE X"FF2C002100E2054D00000000006D00".
+           05  FILLER PIC X(15) VALUE X"C8016400240013002400D000900002".
+           05  FILLER PIC X(15) VALUE X"000200000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"050000000000000000005452545920".
+           05  FILLER PIC X(15) VALUE X"202020202020202020202020202020".
+           05  FILLER PIC X(15) VALUE X"202020202020202020200000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"00006E006500007400582830322930".
+           05  FILLER PIC X(15) VALUE X"303030333300AA001E0034004A000C".
+           05  FILLER PIC X(15) VALUE X"000600000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"06000000FFFF2C005000B207260000".
+           05  FILLER PIC X(15) VALUE X"0000006D00F8016600250000002500".
+           05  FILLER PIC X(15) VALUE X"B00490001400140000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000005000000000000000000".
+           05  FILLER PIC X(15) VALUE X"534849502D56494120202020202020".
+           05  FILLER PIC X(15) VALUE X"202020202020202020202020202020".
+           05  FILLER PIC X(15) VALUE X"007900000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000610000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000650000740058".
+           05  FILLER PIC X(15) VALUE X"2830323029303030303830B8001E00".
+           05  FILLER PIC X(15) VALUE X"34004A001A00000000001400000000".
+           05  FILLER PIC X(15) VALUE X"000000000006000000FFFF2C005100".
+           05  FILLER PIC X(15) VALUE X"00000000000000006D007402A10226".
+           05  FILLER PIC X(15) VALUE X"0014002600B2009A00000000000000".
+           05  FILLER PIC X(15) VALUE X"000081010000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"00000000005649412D44574E2D4152".
+           05  FILLER PIC X(15) VALUE X"572020202020202020202020202020".
+           05  FILLER PIC X(15) VALUE X"202020202000700000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000069".
+           05  FILLER PIC X(15) VALUE X"000000007878787878787878646F77".
+           05  FILLER PIC X(15) VALUE X"6E736D616C2E626D70303030303831".
+           05  FILLER PIC X(15) VALUE X"AA001E0034004A000C000600000000".
+           05  FILLER PIC X(15) VALUE X"00000000000000000006000000FFFF".
+           05  FILLER PIC X(15) VALUE X"2C00090094085800000000006D008B".
+           05  FILLER PIC X(15) VALUE X"027A00270015002700C00390000F00".
+           05  FILLER PIC X(15) VALUE X"0F0000000000000000000000000005".
+           05  FILLER PIC X(15) VALUE X"000000000000000000474C20202020".
+           05  FILLER PIC X(15) VALUE X"202020202020202020202020202020".
+           05  FILLER PIC X(15) VALUE X"202020202020202020000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"006E00650000740058283031352930".
+           05  FILLER PIC X(15) VALUE X"3030303039B8001E0034004A001A00".
+           05  FILLER PIC X(15) VALUE X"000000001400000000000000000006".
+           05  FILLER PIC X(15) VALUE X"000000FFFF2C000A00000000000000".
+           05  FILLER PIC X(15) VALUE X"00006D00EF023700280016002800AA".
+           05  FILLER PIC X(15) VALUE X"009600000000000000000082010000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000047".
+           05  FILLER PIC X(15) VALUE X"4C2D444E2D4152524F572020202020".
+           05  FILLER PIC X(15) VALUE X"202020202020202020202020202000".
+           05  FILLER PIC X(15) VALUE X"700000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000069000000007878".
+           05  FILLER PIC X(15) VALUE X"787878787878646F776E736D616C2E".
+           05  FILLER PIC X(15) VALUE X"626D70303030303130BA001E003400".
+           05  FILLER PIC X(15) VALUE X"4A001C000900000007000000000000".
+           05  FILLER PIC X(15) VALUE X"00000006000000FFFF2C000B00DA0C".
+           05  FILLER PIC X(15) VALUE X"AC00000000006D0009038900290017".
+           05  FILLER PIC X(15) VALUE X"002900440290000900070000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000005000000000000".
+           05  FILLER PIC X(15) VALUE X"0000004352454449542D4C494D4954".
+           05  FILLER PIC X(15) VALUE X"202020202020202020202020202020".
+           05  FILLER PIC X(15) VALUE X"2020206E7000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"617200000000000000007979650000".
+           05  FILLER PIC X(15) VALUE X"74005A2C5A5A5A2C5A5A3939393939".
+           05  FILLER PIC X(15) VALUE X"393939303030303131000000000000".
+           05  FILLER PIC X(15) VALUE X"C8001E0034004A002A000600000014".
+           05  FILLER PIC X(15) VALUE X"0000000000000000000D000000FFFF".
+           05  FILLER PIC X(15) VALUE X"2C006F005A023A00000000008B0022".
+           05  FILLER PIC X(15) VALUE X"00A2042A0000002A0080038C001400".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000005".
+           05  FILLER PIC X(15) VALUE X"0000000000000000004C424C2D5465".
+           05  FILLER PIC X(15) VALUE X"726D73000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000007900000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000650000000258283032302954".
+           05  FILLER PIC X(15) VALUE X"65726D732020202020202020202020".
+           05  FILLER PIC X(15) VALUE X"202020203030303131312C36313835".
+           05  FILLER PIC X(15) VALUE X"3030000000C6001E0034004A002800".
+           05  FILLER PIC X(15) VALUE X"06000000140000000000000000000D".
+           05  FILLER PIC X(15) VALUE X"000000FFFF2C000600EE0533000000".
+           05  FILLER PIC X(15) VALUE X"00008B00890036002B0000002B00DB".
+           05  FILLER PIC X(15) VALUE X"028C00140000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"00000000050000000000000000004C".
+           05  FILLER PIC X(15) VALUE X"424C2D62692D71756F746520202020".
+           05  FILLER PIC X(15) VALUE X"202020202020202020202020202000".
+           05  FILLER PIC X(15) VALUE X"790000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000065000000025828".
+           05  FILLER PIC X(15) VALUE X"3032302942492051756F7465204944".
+           05  FILLER PIC X(15) VALUE X"202020202020202020303030303036".
+           05  FILLER PIC X(15) VALUE X"2C30373834303100C8001E0034004A".
+           05  FILLER PIC X(15) VALUE X"002A00060000001400000000000000".
+           05  FILLER PIC X(15) VALUE X"00000D000000FFFF2C005D007C0C4E".
+           05  FILLER PIC X(15) VALUE X"00000000008B00D700D8032C000000".
+           05  FILLER PIC X(15) VALUE X"2C0025048C00140000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000500000000000000".
+           05  FILLER PIC X(15) VALUE X"00004C424C2D467265696768742D5A".
+           05  FILLER PIC X(15) VALUE X"6F6E65000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000790000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000065000000".
+           05  FILLER PIC X(15) VALUE X"025828303230294672656967687420".
+           05  FILLER PIC X(15) VALUE X"5A6F6E652020202020202020303030".
+           05  FILLER PIC X(15) VALUE X"3039332C323535323030000000C600".
+           05  FILLER PIC X(15) VALUE X"1E0034004A00280006000000140000".
+           05  FILLER PIC X(15) VALUE X"000000000000000D000000FFFF2C00".
+           05  FILLER PIC X(15) VALUE X"8B00E4047B00000000008B005A0136".
+           05  FILLER PIC X(15) VALUE X"002D0000002D00D5038C0014000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000050000".
+           05  FILLER PIC X(15) VALUE X"000000000000004C424C2D45585445".
+           05  FILLER PIC X(15) VALUE X"524E414C2D49442020202020202020".
+           05  FILLER PIC X(15) VALUE X"202020202020200079000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"006500000002582830323029457874".
+           05  FILLER PIC X(15) VALUE X"65726E616C20494420202020202020".
+           05  FILLER PIC X(15) VALUE X"20203030303133392C323335323031".
+           05  FILLER PIC X(15) VALUE X"00C8001E0034004A002A0006000000".
+           05  FILLER PIC X(15) VALUE X"140000000000000000000D000000FF".
+           05  FILLER PIC X(15) VALUE X"FF2C005E0096064800000000008B00".
+           05  FILLER PIC X(15) VALUE X"F301C6032E0000002E0037068C0028".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"050000000000000000004C424C2D53".
+           05  FILLER PIC X(15) VALUE X"6869702D464F422D4D657373616765".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000079000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000006500000002582830343029".
+           05  FILLER PIC X(15) VALUE X"205368697020464F42204D65737361".
+           05  FILLER PIC X(15) VALUE X"67652020203030303039342C353735".
+           05  FILLER PIC X(15) VALUE X"313030000000C8001E0034004A002A".
+           05  FILLER PIC X(15) VALUE X"000600000014000000000000000000".
+           05  FILLER PIC X(15) VALUE X"0D000000FFFF2C000300BC02250000".
+           05  FILLER PIC X(15) VALUE X"0000008B00B902C6032F0000002F00".
+           05  FILLER PIC X(15) VALUE X"43048C001400000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000005000000000000000000".
+           05  FILLER PIC X(15) VALUE X"4C424C2D436F6D6D697373696F6E20".
+           05  FILLER PIC X(15) VALUE X"202020202020202020202020202020".
+           05  FILLER PIC X(15) VALUE X"007900000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000650000000258".
+           05  FILLER PIC X(15) VALUE X"2830323029436F6D6D697373696F6E".
+           05  FILLER PIC X(15) VALUE X"202020202020202020203030303030".
+           05  FILLER PIC X(15) VALUE X"332C313137303030000000E6001E00".
+           05  FILLER PIC X(15) VALUE X"34004A004800050000003C00000000".
+           05  FILLER PIC X(15) VALUE X"000000000006000000FFFF2C002900".
+           05  FILLER PIC X(15) VALUE X"C80B2300000000009A002200900030".
+           05  FILLER PIC X(15) VALUE X"0019003000980320033C000A000A00".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000500000000".
+           05  FILLER PIC X(15) VALUE X"00000000005445524D532020202020".
+           05  FILLER PIC X(15) VALUE X"202020202020202020202020202020".
+           05  FILLER PIC X(15) VALUE X"202020202000700000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"00000000000000000000000000006F".
+           05  FILLER PIC X(15) VALUE X"000000005828313029303120202020".
+           05  FILLER PIC X(15) VALUE X"202020203031202020202020202030".
+           05  FILLER PIC X(15) VALUE X"322020202020202020303320202020".
+           05  FILLER PIC X(15) VALUE X"202020203034202020202020202030".
+           05  FILLER PIC X(15) VALUE X"352020202020202020303030303431".
+           05  FILLER PIC X(15) VALUE X"00AE001E0034004A00100004000000".
+           05  FILLER PIC X(15) VALUE X"0600000000000000000006000000FF".
+           05  FILLER PIC X(15) VALUE X"FF2C0047006A0C6000000000009A00".
+           05  FILLER PIC X(15) VALUE X"89009A0031001A003100B8018C0006".
+           05  FILLER PIC X(15) VALUE X"000600000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"0500000000000000000051554F5445".
+           05  FILLER PIC X(15) VALUE X"2D4944202020202020202020202020".
+           05  FILLER PIC X(15) VALUE X"202020202020202020206E00000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000796500007400392836293030".
+           05  FILLER PIC X(15) VALUE X"30303030303030303731B8001E0034".
+           05  FILLER PIC X(15) VALUE X"004A001A0000000000140000000000".
+           05  FILLER PIC X(15) VALUE X"0000000006000000FFFF2C00480000".
+           05  FILLER PIC X(15) VALUE X"000000000000009A00BA0000003200".
+           05  FILLER PIC X(15) VALUE X"1B003200AA009A0000000000000000".
+           05  FILLER PIC X(15) VALUE X"008301000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"0000000051554F54452D44574E2D41".
+           05  FILLER PIC X(15) VALUE X"525720202020202020202020202020".
+           05  FILLER PIC X(15) VALUE X"202020200070000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000006900".
+           05  FILLER PIC X(15) VALUE X"0000007878787878787878646F776E".
+           05  FILLER PIC X(15) VALUE X"736D616C2E626D70303030303732AA".
+           05  FILLER PIC X(15) VALUE X"001E0034004A000C00060000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000006000000FFFF2C".
+           05  FILLER PIC X(15) VALUE X"0025007A095100000000009A00D700".
+           05  FILLER PIC X(15) VALUE X"A00033001C003300F20390000A000A".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000500".
+           05  FILLER PIC X(15) VALUE X"00000000000000004652542D5A4F4E".
+           05  FILLER PIC X(15) VALUE X"452020202020202020202020202020".
+           05  FILLER PIC X(15) VALUE X"202020202020202000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000007500000000".
+           05  FILLER PIC X(15) VALUE X"6E0065000074005828303130293030".
+           05  FILLER PIC X(15) VALUE X"30303337B8001E0034004A001A0000".
+           05  FILLER PIC X(15) VALUE X"000000140000000000000000000600".
+           05  FILLER PIC X(15) VALUE X"0000FFFF2C00100000000000000000".
+           05  FILLER PIC X(15) VALUE X"009A004101000034001D003400AA00".
+           05  FILLER PIC X(15) VALUE X"9A0000000000000000008401000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000005A4F".
+           05  FILLER PIC X(15) VALUE X"4E452D425257532020202020202020".
+           05  FILLER PIC X(15) VALUE X"202020202020202020202020200070".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000006900000000787878".
+           05  FILLER PIC X(15) VALUE X"7878787878646F776E736D616C2E62".
+           05  FILLER PIC X(15) VALUE X"6D70303030303136AA001E0034004A".
+           05  FILLER PIC X(15) VALUE X"000C00060000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000006000000FFFF2C008C005A054E".
+           05  FILLER PIC X(15) VALUE X"00000000009A005A01AA0035001E00".
+           05  FILLER PIC X(15) VALUE X"3500140590000C000C000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000500000000000000".
+           05  FILLER PIC X(15) VALUE X"000045585445524E414C2D49442020".
+           05  FILLER PIC X(15) VALUE X"202020202020202020202020202020".
+           05  FILLER PIC X(15) VALUE X"202000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"0000000000000000006E0065000074".
+           05  FILLER PIC X(15) VALUE X"005828303132293030303134300401".
+           05  FILLER PIC X(15) VALUE X"1E0034004A006600050000005A0000".
+           05  FILLER PIC X(15) VALUE X"0000000000000006000000FFFF2C00".
+           05  FILLER PIC X(15) VALUE X"1B00FA061A00000000009A00F301B6".
+           05  FILLER PIC X(15) VALUE X"0036001F00360044071E051E000F00".
+           05  FILLER PIC X(15) VALUE X"0F0000000000000000000000050000".
+           05  FILLER PIC X(15) VALUE X"00000000000000464F422D6D657373".
+           05  FILLER PIC X(15) VALUE X"616765202020202020202020202020".
+           05  FILLER PIC X(15) VALUE X"202020202020200070000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000100000000".
+           05  FILLER PIC X(15) VALUE X"000000006D00000000000000000000".
+           05  FILLER PIC X(15) VALUE X"006F0000000058283135294F6E6520".
+           05  FILLER PIC X(15) VALUE X"20202020202020202020204F6E6520".
+           05  FILLER PIC X(15) VALUE X"202020202020202020202054776F20".
+           05  FILLER PIC X(15) VALUE X"202020202020202020202054687265".
+           05  FILLER PIC X(15) VALUE X"6520202020202020202020466F7572".
+           05  FILLER PIC X(15) VALUE X"202020202020202020202046697665".
+           05  FILLER PIC X(15) VALUE X"202020202020202020202030303030".
+           05  FILLER PIC X(15) VALUE X"323700B0001E0034004A0012000500".
+           05  FILLER PIC X(15) VALUE X"000005000000000000000000060000".
+           05  FILLER PIC X(15) VALUE X"00FFFF2C0004001206790000000000".
+           05  FILLER PIC X(15) VALUE X"9A00B902C500370020003700E80190".
+           05  FILLER PIC X(15) VALUE X"000500050000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000005000000000000000000434F4D".
+           05  FILLER PIC X(15) VALUE X"4D2D52202020202020202020202020".
+           05  FILLER PIC X(15) VALUE X"202020202020202020202020000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000610000000000".
+           05  FILLER PIC X(15) VALUE X"000000006E00650000740058283035".
+           05  FILLER PIC X(15) VALUE X"2958585858583030303030340000B8".
+           05  FILLER PIC X(15) VALUE X"001E0034004A001A00000000001400".
+           05  FILLER PIC X(15) VALUE X"000000000000000006000000FFFF2C".
+           05  FILLER PIC X(15) VALUE X"00050000000000000000009A00EF02".
+           05  FILLER PIC X(15) VALUE X"3700380021003800AA009600000000".
+           05  FILLER PIC X(15) VALUE X"0000000000F5010000000000000000".
+           05  FILLER PIC X(15) VALUE X"0000000000000000434D4E2D444E2D".
+           05  FILLER PIC X(15) VALUE X"4152524F5720202020202020202020".
+           05  FILLER PIC X(15) VALUE X"202020202020202000700000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000069000000007878787878787878".
+           05  FILLER PIC X(15) VALUE X"646F776E736D616C2E626D70303030".
+           05  FILLER PIC X(15) VALUE X"303035C8001E0034004A002A000600".
+           05  FILLER PIC X(15) VALUE X"0000140000000000000000000D0000".
+           05  FILLER PIC X(15) VALUE X"00FFFF2C000F00A4072A0000000000".
+           05  FILLER PIC X(15) VALUE X"B8002200A2043900000039001C038C".
+           05  FILLER PIC X(15) VALUE X"001400000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"0000050000000000000000004C424C".
+           05  FILLER PIC X(15) VALUE X"2D4341525249455220202020202020".
+           05  FILLER PIC X(15) VALUE X"202020202020202020202020007900".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000650000000258283032".
+           05  FILLER PIC X(15) VALUE X"302943617272696572202020202020".
+           05  FILLER PIC X(15) VALUE X"202020202020203030303031352C30".
+           05  FILLER PIC X(15) VALUE X"3933383030000000C8001E0034004A".
+           05  FILLER PIC X(15) VALUE X"002A00060000001400000000000000".
+           05  FILLER PIC X(15) VALUE X"00000D000000FFFF2C001300E40366".
+           05  FILLER PIC X(15) VALUE X"0000000000B8008600A2043A000000".
+           05  FILLER PIC X(15) VALUE X"3A00100A8C00140000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000500000000000000".
+           05  FILLER PIC X(15) VALUE X"00004C424C2D534552564943452D54".
+           05  FILLER PIC X(15) VALUE X"595045202020202020202020202020".
+           05  FILLER PIC X(15) VALUE X"202000790000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000065000000".
+           05  FILLER PIC X(15) VALUE X"025828303230295365727669636520".
+           05  FILLER PIC X(15) VALUE X"547970652020202020202020303030".
+           05  FILLER PIC X(15) VALUE X"3031392C353638323031000000DE00".
+           05  FILLER PIC X(15) VALUE X"1E0034004A00400006000000280000".
+           05  FILLER PIC X(15) VALUE X"000000000000000D000000FFFF2C00".
+           05  FILLER PIC X(15) VALUE X"1500BC01250000000000B800AE01C6".
+           05  FILLER PIC X(15) VALUE X"033B0000003B0037068C0028000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000050000".
+           05  FILLER PIC X(15) VALUE X"000000000000004C424C2D43524D2D".
+           05  FILLER PIC X(15) VALUE X"52455354522D4C4556202020202020".
+           05  FILLER PIC X(15) VALUE X"202020202020200079000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"00650000000258283034302943524D".
+           05  FILLER PIC X(15) VALUE X"205265737472696374696F6E204C65".
+           05  FILLER PIC X(15) VALUE X"76656C202020202020202020202020".
+           05  FILLER PIC X(15) VALUE X"202020202020203030303032312C31".
+           05  FILLER PIC X(15) VALUE X"35343530350000000000DE001E0034".
+           05  FILLER PIC X(15) VALUE X"004A00400006000000280000000000".
+           05  FILLER PIC X(15) VALUE X"000000000D000000FFFF2C001900D6".
+           05  FILLER PIC X(15) VALUE X"093B0000000000B8004F02C6033C00".
+           05  FILLER PIC X(15) VALUE X"00003C0069068C0028000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000050000000000".
+           05  FILLER PIC X(15) VALUE X"000000004C424C2D43524D2D555352".
+           05  FILLER PIC X(15) VALUE X"2D4752502020202020202020202020".
+           05  FILLER PIC X(15) VALUE X"202020200079000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000006500".
+           05  FILLER PIC X(15) VALUE X"00000258283034302943524D204173".
+           05  FILLER PIC X(15) VALUE X"7369676E656420557365722F47726F".
+           05  FILLER PIC X(15) VALUE X"757020202020202020202020202020".
+           05  FILLER PIC X(15) VALUE X"202020203030303032352C36373338".
+           05  FILLER PIC X(15) VALUE X"30310000000000C6001E0034004A00".
+           05  FILLER PIC X(15) VALUE X"280005000000140000000000000000".
+           05  FILLER PIC X(15) VALUE X"0006000000FFFF2C001700FC083200".
+           05  FILLER PIC X(15) VALUE X"00000000C700AF01CA003D0025003D".
+           05  FILLER PIC X(15) VALUE X"00EE021E051E001400140000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000050000000000000000".
+           05  FILLER PIC X(15) VALUE X"0043524D2D52455354522D4C455620".
+           05  FILLER PIC X(15) VALUE X"202020202020202020202020202020".
+           05  FILLER PIC X(15) VALUE X"200070000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000100000000000000007300".
+           05  FILLER PIC X(15) VALUE X"000000000000000000006F00000000".
+           05  FILLER PIC X(15) VALUE X"582832302920202020202020202020".
+           05  FILLER PIC X(15) VALUE X"202020202020202020203030303032".
+           05  FILLER PIC X(15) VALUE X"33000000000000000000AA001E0034".
+           05  FILLER PIC X(15) VALUE X"004A000C0005000000000000000000".
+           05  FILLER PIC X(15) VALUE X"0000000006000000FFFF2C000E009E".
+           05  FILLER PIC X(15) VALUE X"09220000000000C8002200DE003E00".
+           05  FILLER PIC X(15) VALUE X"22003E002402900006000600000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000050000000000".
+           05  FILLER PIC X(15) VALUE X"000000004341525249455220202020".
+           05  FILLER PIC X(15) VALUE X"202020202020202020202020202020".
+           05  FILLER PIC X(15) VALUE X"202020200000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"00000000000000000000006E006500".
+           05  FILLER PIC X(15) VALUE X"007400582830362930303030313400".
+           05  FILLER PIC X(15) VALUE X"B8001E0034004A001A000000000014".
+           05  FILLER PIC X(15) VALUE X"00000000000000000006000000FFFF".
+           05  FILLER PIC X(15) VALUE X"2C0011000000000000000000C8005F".
+           05  FILLER PIC X(15) VALUE X"0000003F0023003F00AA009A000000".
+           05  FILLER PIC X(15) VALUE X"000000000000850100000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000434152524945".
+           05  FILLER PIC X(15) VALUE X"522D44574E2D415257202020202020".
+           05  FILLER PIC X(15) VALUE X"202020202020202020007000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000690000000078787878787878".
+           05  FILLER PIC X(15) VALUE X"78646F776E736D616C2E626D703030".
+           05  FILLER PIC X(15) VALUE X"30303137AA001E0034004A000C0005".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000600".
+           05  FILLER PIC X(15) VALUE X"0000FFFF2C001400C00C5900000000".
+           05  FILLER PIC X(15) VALUE X"00C8008600E4004100240040000E01".
+           05  FILLER PIC X(15) VALUE X"8C0003000300000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000050000000000000000005345".
+           05  FILLER PIC X(15) VALUE X"52564943452D545950452020202020".
+           05  FILLER PIC X(15) VALUE X"202020202020202020202020206E79".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000006100000000".
+           05  FILLER PIC X(15) VALUE X"000000000000006500007400392830".
+           05  FILLER PIC X(15) VALUE X"332930303030323000AA001E003400".
+           05  FILLER PIC X(15) VALUE X"4A000C000600000000000000000000".
+           05  FILLER PIC X(15) VALUE X"00000006000000FFFF2C001200640C".
+           05  FILLER PIC X(15) VALUE X"490000000000C8008600E700400000".
+           05  FILLER PIC X(15) VALUE X"0041001E0A90003200320000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000005000000000000".
+           05  FILLER PIC X(15) VALUE X"000000534552564943452D44455343".
+           05  FILLER PIC X(15) VALUE X"202020202020202020202020202020".
+           05  FILLER PIC X(15) VALUE X"202020007900000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000080000000000".
+           05  FILLER PIC X(15) VALUE X"610000000000000000000000650000".
+           05  FILLER PIC X(15) VALUE X"7400582830353029303030303138B4".
+           05  FILLER PIC X(15) VALUE X"001E0034004A001600050000000800".
+           05  FILLER PIC X(15) VALUE X"000000000000000006000000FFFF2C".
+           05  FILLER PIC X(15) VALUE X"0018005A077E0000000000C8005002".
+           05  FILLER PIC X(15) VALUE X"190142002600420088029000080008".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000500".
+           05  FILLER PIC X(15) VALUE X"000000000000000043524D2D555352".
+           05  FILLER PIC X(15) VALUE X"2D4752502020202020202020202020".
+           05  FILLER PIC X(15) VALUE X"202020202020202000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000061000000000000000000".
+           05  FILLER PIC X(15) VALUE X"6E0065000074005828303829202020".
+           05  FILLER PIC X(15) VALUE X"2020202020303030303234000000B8".
+           05  FILLER PIC X(15) VALUE X"001E0034004A001A00000000001400".
+           05  FILLER PIC X(15) VALUE X"000000000000000006000000FFFF2C".
+           05  FILLER PIC X(15) VALUE X"001A000000000000000000C9009602".
+           05  FILLER PIC X(15) VALUE X"3700430027004300AA009600000000".
+           05  FILLER PIC X(15) VALUE X"0000000000F7010000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000043524D2D425257".
+           05  FILLER PIC X(15) VALUE X"534552202020202020202020202020".
+           05  FILLER PIC X(15) VALUE X"202020202020202000700000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000073000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000069000000007878787878787878".
+           05  FILLER PIC X(15) VALUE X"646F776E736D616C2E626D70303030".
+           05  FILLER PIC X(15) VALUE X"30323603100000671500008B210000".
+           05  FILLER PIC X(15) VALUE X"AF2700005F2800006F1E00003D0F00".
+           05  FILLER PIC X(15) VALUE X"00470C00008B1B0000351C0000ED1C".
+           05  FILLER PIC X(15) VALUE X"0000770E0000AF140000292D000017".
+           05  FILLER PIC X(15) VALUE X"29000049250000D32D0000352F0000".
+           05  FILLER PIC X(15) VALUE X"DF2900008B2E0000A72A0000230600".
+           05  FILLER PIC X(15) VALUE X"00632C0000DF2F0000852B00009330".
+           05  FILLER PIC X(15) VALUE X"0000AB260000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"00000000000000F30A00007F190000".
+           05  FILLER PIC X(15) VALUE X"D518000000000000000000009F2400".
+           05  FILLER PIC X(15) VALUE X"000000000000000000910900005322".
+           05  FILLER PIC X(15) VALUE X"000011160000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000009D0B00006B".
+           05  FILLER PIC X(15) VALUE X"050000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"0000000000000000BB160000CD0600".
+           05  FILLER PIC X(15) VALUE X"00770700002F080000D90800003923".
+           05  FILLER PIC X(15) VALUE X"0000E7230000000000000000000097".
+           05  FILLER PIC X(15) VALUE X"110000731700001D180000F10C0000".
+           05  FILLER PIC X(15) VALUE X"00000000291A0000D31A00003B0A00".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"0000000000000000000000351F0000".
+           05  FILLER PIC X(15) VALUE X"C32000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"00000000000000C900000000000000".
+           05  FILLER PIC X(15) VALUE X"E913000000000000A71D0000000000".
+           05  FILLER PIC X(15) VALUE X"00CF100000231300005D1200008F01".
+           05  FILLER PIC X(15) VALUE X"000000000000E50300000000000000".
+           05  FILLER PIC X(15) VALUE X"000000AB040000590200001F030000".
+           05  FILLER PIC X(15) VALUE X"010000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"FD1F00000126000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"0000000000000000000000A90D0000".
+           05  FILLER PIC X(15) VALUE X"7C006B0074007A007B00760079003C".
+           05  FILLER PIC X(15) VALUE X"001600430044004500460028005200".
+           05  FILLER PIC X(15) VALUE X"20003B0008004E0099000C00070001".
+           05  FILLER PIC X(15) VALUE X"0071004B00730072006D000D000200".
+           05  FILLER PIC X(15) VALUE X"2A0042004C004D0022002100500051".
+           05  FILLER PIC X(15) VALUE X"0009000A000B006F0006005D008B00".
+           05  FILLER PIC X(15) VALUE X"5E000300290047004800250010008C".
+           05  FILLER PIC X(15) VALUE X"001B00040005000F00130015001900".
+           05  FILLER PIC X(15) VALUE X"17000E0011001200140018001A0016".
+           05  FILLER PIC X(15) VALUE X"004300440045004600280052002000".
+           05  FILLER PIC X(15) VALUE X"3B003C0008004E0002002A0042004C".
+           05  FILLER PIC X(15) VALUE X"004D0022002100510009000A000B00".
+           05  FILLER PIC X(15) VALUE X"0D00290047004800250010008C001B".
+           05  FILLER PIC X(15) VALUE X"00040005000E001100140017001800".
+           05  FILLER PIC X(2) VALUE X"1A00".
+      *********************************************************
+      * fonts/colors records for use with SET-RECORD function *
+      *********************************************************
+       01  PPSTOPT-FONTS-RECORD.
+           05  PPSTOPT-FN-RET-CODE PIC S9(4) COMP-5.
+           05  FILLER PIC X(8) VALUE "fontsrec".
+           05  FILLER PIC X(15) VALUE X"4E073A0008000C0006001E00010005".
+           05  FILLER PIC X(15) VALUE X"000E00000000000000006200000000".
+           05  FILLER PIC X(15) VALUE X"417269616C00000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"3A0008000C0006001E000200060010".
+           05  FILLER PIC X(15) VALUE X"000000000000000062000000004172".
+           05  FILLER PIC X(15) VALUE X"69616C000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000003A00".
+           05  FILLER PIC X(15) VALUE X"08000C0006001E0003000400080000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000041726961".
+           05  FILLER PIC X(15) VALUE X"6C0000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"00000000000000000000003A000800".
+           05  FILLER PIC X(15) VALUE X"0C0006001E00040005000B00000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000417269616C00".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"0000000000000000003C0008000E00".
+           05  FILLER PIC X(15) VALUE X"06001E00050005000E00671B0A1400".
+           05  FILLER PIC X(15) VALUE X"000000000000000000417269616C00".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"0000000000000000003A0008000C00".
+           05  FILLER PIC X(15) VALUE X"06001E000B00080010000000000000".
+           05  FILLER PIC X(15) VALUE X"006600000000004669786564737973".
+           05  FILLER PIC X(15) VALUE X"202020202020202020202020202020".
+           05  FILLER PIC X(15) VALUE X"202020202020203E00080010000600".
+           05  FILLER PIC X(15) VALUE X"1E000C0008000D0000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000660000000000436F75726965".
+           05  FILLER PIC X(15) VALUE X"720000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"0000000000000000003A0008000C00".
+           05  FILLER PIC X(15) VALUE X"06001E000D000C0018000000000000".
+           05  FILLER PIC X(15) VALUE X"0000620000000054696D657320526F".
+           05  FILLER PIC X(15) VALUE X"6D616E202020202020202020202020".
+           05  FILLER PIC X(15) VALUE X"202020202020203A0008000C000600".
+           05  FILLER PIC X(15) VALUE X"1E00080006000B0000000000000000".
+           05  FILLER PIC X(15) VALUE X"6200000000417269616C0000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"00000000003A0008000C0006001E00".
+           05  FILLER PIC X(15) VALUE X"090004000800000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000536D616C6C20466F6E747300".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"0000003A0008000C0006001E000A00".
+           05  FILLER PIC X(15) VALUE X"06000B000000000000000062000000".
+           05  FILLER PIC X(15) VALUE X"00536D616C6C20466F6E7473000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"003A0008000C0006001E000E000400".
+           05  FILLER PIC X(15) VALUE X"0A0000000000000000000000000053".
+           05  FILLER PIC X(15) VALUE X"6D616C6C20466F6E74730000000000".
+           05  FILLER PIC X(15) VALUE X"00000000000000000000000000003A".
+           05  FILLER PIC X(15) VALUE X"0008000C0006001E00060004000E00".
+           05  FILLER PIC X(15) VALUE X"000000000000006200000000417269".
+           05  FILLER PIC X(15) VALUE X"616C204E6172726F77000000000000".
+           05  FILLER PIC X(15) VALUE X"0000000000000000000000003A0008".
+           05  FILLER PIC X(15) VALUE X"000C0006001E00070007000E000000".
+           05  FILLER PIC X(15) VALUE X"00000000660000000000436F757269".
+           05  FILLER PIC X(15) VALUE X"6572204E6577000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000003A0008000C".
+           05  FILLER PIC X(15) VALUE X"0006001E000F000C001E0000000000".
+           05  FILLER PIC X(15) VALUE X"0000006200000000416C6265727475".
+           05  FILLER PIC X(15) VALUE X"7320457874726120426F6C64000000".
+           05  FILLER PIC X(15) VALUE X"00000000000000003A0008000C0006".
+           05  FILLER PIC X(15) VALUE X"001E0010000D002200000000000000".
+           05  FILLER PIC X(15) VALUE X"006279000000416C62657274757320".
+           05  FILLER PIC X(15) VALUE X"457874726120426F6C640000000000".
+           05  FILLER PIC X(15) VALUE X"0000000000003A0008000C0006001E".
+           05  FILLER PIC X(15) VALUE X"001100080016000000000000000062".
+           05  FILLER PIC X(15) VALUE X"0000000054696D6573204E65772052".
+           05  FILLER PIC X(15) VALUE X"6F6D616E0000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000003A0008000C0006001E0012".
+           05  FILLER PIC X(15) VALUE X"000700130000000000000000620000".
+           05  FILLER PIC X(15) VALUE X"000054696D6573204E657720526F6D".
+           05  FILLER PIC X(15) VALUE X"616E00000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"00003A0008000C0006001E00130008".
+           05  FILLER PIC X(15) VALUE X"002000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"43333920486967682032347074204C".
+           05  FILLER PIC X(15) VALUE X"4A3400000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"3A0008000C0006001E00140005000B".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000004D53".
+           05  FILLER PIC X(15) VALUE X"205365726966000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000003A00".
+           05  FILLER PIC X(15) VALUE X"08000C0006001E0016001000200000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000043333920".
+           05  FILLER PIC X(15) VALUE X"4D656469756D2032347074204C4A34".
+           05  FILLER PIC X(15) VALUE X"00000000000000000000003A000800".
+           05  FILLER PIC X(15) VALUE X"0C0006001E00170007000E00000000".
+           05  FILLER PIC X(15) VALUE X"000000006200000000436F75726965".
+           05  FILLER PIC X(15) VALUE X"72204E657700000000000000000000".
+           05  FILLER PIC X(15) VALUE X"0000000000000000003A0008000C00".
+           05  FILLER PIC X(15) VALUE X"06001E001800090016000000000000".
+           05  FILLER PIC X(15) VALUE X"00006200000000417269616C000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000003A0008000C000600".
+           05  FILLER PIC X(15) VALUE X"1E0019000E00240000000000000000".
+           05  FILLER PIC X(15) VALUE X"620000000054696D6573204E657720".
+           05  FILLER PIC X(15) VALUE X"526F6D616E00000000000000000000".
+           05  FILLER PIC X(15) VALUE X"00000000003A0008000C0006001E00".
+           05  FILLER PIC X(15) VALUE X"15000C001F00000000000000006200".
+           05  FILLER PIC X(15) VALUE X"00000054696D6573204E657720526F".
+           05  FILLER PIC X(15) VALUE X"6D616E000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"0000003A0008000C0006001E001A00".
+           05  FILLER PIC X(15) VALUE X"06000F000000000000000062000000".
+           05  FILLER PIC X(15) VALUE X"00417269616C000000000000000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"003A0008000C0006001E001B000B00".
+           05  FILLER PIC X(15) VALUE X"210000000000000000620000000041".
+           05  FILLER PIC X(15) VALUE X"7269616C204E6172726F7700000000".
+           05  FILLER PIC X(15) VALUE X"00000000000000000000000000003A".
+           05  FILLER PIC X(15) VALUE X"0008000C0006001E001C0004000C00".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000417269".
+           05  FILLER PIC X(15) VALUE X"616C00000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"0000000000000000000000003A0008".
+           05  FILLER PIC X(15) VALUE X"000C0006001E001D00090023000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000004333392048".
+           05  FILLER PIC X(15) VALUE X"6967682032347074204C4A34000000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000003A0008000C".
+           05  FILLER PIC X(15) VALUE X"0006001E001E000900200000000000".
+           05  FILLER PIC X(15) VALUE X"0000000000000000433339204D6564".
+           05  FILLER PIC X(15) VALUE X"69756D2032347074204C4A34000000".
+           05  FILLER PIC X(15) VALUE X"00000000000000003C0008000E0006".
+           05  FILLER PIC X(15) VALUE X"001E001F0006001100000000000000".
+           05  FILLER PIC X(15) VALUE X"0000000000000000417269616C0000".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(15) VALUE X"00000000000000003E000800100006".
+           05  FILLER PIC X(15) VALUE X"001E00200006001000000000000000".
+           05  FILLER PIC X(15) VALUE X"00000000006200000000417269616C".
+           05  FILLER PIC X(15) VALUE X"000000000000000000000000000000".
+           05  FILLER PIC X(10) VALUE X"00000000000000000000".
+       01  PPSTOPT-COLOR-RECORD.
+           05  PPSTOPT-CL-RET-CODE PIC S9(4) COMP-5.
+           05  FILLER PIC X(8) VALUE "colorrec".
+           05  FILLER PIC X(15) VALUE X"D2041C0008000200100000000B0002".
+           05  FILLER PIC X(15) VALUE X"000100000000000974000300000000".
+           05  FILLER PIC X(15) VALUE X"1C0008000200100000000C000C0001".
+           05  FILLER PIC X(15) VALUE X"00000000000D740007000000001C00".
+           05  FILLER PIC X(15) VALUE X"08000200100000000D000874000F00".
+           05  FILLER PIC X(15) VALUE X"00000007740005000000001C000800".
+           05  FILLER PIC X(15) VALUE X"0200100000000E000874000F000000".
+           05  FILLER PIC X(15) VALUE X"0009740009000000001C0008000200".
+           05  FILLER PIC X(15) VALUE X"100000000F000E74000C000000000A".
+           05  FILLER PIC X(15) VALUE X"740007000000001C00080002001000".
+           05  FILLER PIC X(15) VALUE X"000010000B74000C000000000A7400".
+           05  FILLER PIC X(15) VALUE X"09000000001C000800020010000000".
+           05  FILLER PIC X(15) VALUE X"11000B74000B000000000974000700".
+           05  FILLER PIC X(15) VALUE X"0000001C0008000200100000001200".
+           05  FILLER PIC X(15) VALUE X"0A740007000000000C740008000000".
+           05  FILLER PIC X(15) VALUE X"001C00080002001000000013000874".
+           05  FILLER PIC X(15) VALUE X"000F000000000A74000B000000001C".
+           05  FILLER PIC X(15) VALUE X"000800020010000000140006000100".
+           05  FILLER PIC X(15) VALUE X"000000001074000B000000001C0008".
+           05  FILLER PIC X(15) VALUE X"0002001000000015000974000F0000".
+           05  FILLER PIC X(15) VALUE X"000007740003000000001C00080002".
+           05  FILLER PIC X(15) VALUE X"001000000016000B74000C00000000".
+           05  FILLER PIC X(15) VALUE X"0D74000B000000001C000800020010".
+           05  FILLER PIC X(15) VALUE X"00000017000B740000000000001572".
+           05  FILLER PIC X(15) VALUE X"0000008080001C0008000200100000".
+           05  FILLER PIC X(15) VALUE X"0018000A74000E0000000007740008".
+           05  FILLER PIC X(15) VALUE X"000000001C00080002001000000019".
+           05  FILLER PIC X(15) VALUE X"000874000F00000000097400080000".
+           05  FILLER PIC X(15) VALUE X"00001C0008000200100000001A000B".
+           05  FILLER PIC X(15) VALUE X"740000000000001674000E00000000".
+           05  FILLER PIC X(15) VALUE X"1C0008000200100000001B00047400".
+           05  FILLER PIC X(15) VALUE X"00000000000C74000A000000001C00".
+           05  FILLER PIC X(15) VALUE X"08000200100000001C000E74000C00".
+           05  FILLER PIC X(15) VALUE X"0000000F74000E000000001C000800".
+           05  FILLER PIC X(15) VALUE X"0200100000001D000874000F000000".
+           05  FILLER PIC X(15) VALUE X"0004740000000000001C0008000200".
+           05  FILLER PIC X(15) VALUE X"100000001E000B7400000000000017".
+           05  FILLER PIC X(15) VALUE X"720000C0C0C0001C00080002001000".
+           05  FILLER PIC X(15) VALUE X"00001F000B740000000000000D0002".
+           05  FILLER PIC X(15) VALUE X"00000000001C000800020010000000".
+           05  FILLER PIC X(15) VALUE X"20000B7400000000000014720000FF".
+           05  FILLER PIC X(15) VALUE X"FF00001C0008000200100000002100".
+           05  FILLER PIC X(15) VALUE X"0874000F000000000E720000000000".
+           05  FILLER PIC X(15) VALUE X"001C00080002001000000022000C00".
+           05  FILLER PIC X(15) VALUE X"0100000000000E720000FFFFFF0028".
+           05  FILLER PIC X(15) VALUE X"000800020010000C00230012720000".
+           05  FILLER PIC X(15) VALUE X"FF0000001300000000000000526564".
+           05  FILLER PIC X(15) VALUE X"2F44656661756C74001C0008000200".
+           05  FILLER PIC X(15) VALUE X"1000000024000F7401000000000010".
+           05  FILLER PIC X(15) VALUE X"740007808080003000080002001000".
+           05  FILLER PIC X(15) VALUE X"1400250019740102000000000D0002".
+           05  FILLER PIC X(15) VALUE X"0000000000477265656E2F44656661".
+           05  FILLER PIC X(15) VALUE X"756C742057696E646F772A00080002".
+           05  FILLER PIC X(15) VALUE X"0010000E0026001974010200000000".
+           05  FILLER PIC X(15) VALUE X"1300000000000000477265656E2F44".
+           05  FILLER PIC X(15) VALUE X"656661756C74003000080002001000".
+           05  FILLER PIC X(15) VALUE X"140027000C74070100000000090002".
+           05  FILLER PIC X(15) VALUE X"0000000000426C75652F4465666175".
+           05  FILLER PIC X(15) VALUE X"6C742057696E646F77002800080002".
+           05  FILLER PIC X(15) VALUE X"0010000C0028000C74070100000000".
+           05  FILLER PIC X(15) VALUE X"0D00000000000000426C75652F4465".
+           05  FILLER PIC X(15) VALUE X"6661756C742E000800020010001200".
+           05  FILLER PIC X(15) VALUE X"290011740104000000000D00020000".
+           05  FILLER PIC X(15) VALUE X"0000005265642F44656661756C7420".
+           05  FILLER PIC X(15) VALUE X"57696E646F77280008000200180004".
+           05  FILLER PIC X(15) VALUE X"002A00060001000000000010720400".
+           05  FILLER PIC X(15) VALUE X"0000000000760000FF000000000000".
+           05  FILLER PIC X(15) VALUE X"00240008000200180000002B000600".
+           05  FILLER PIC X(15) VALUE X"010000000000187202000000000000".
+           05  FILLER PIC X(15) VALUE X"680000FF0000002E00080002001800".
+           05  FILLER PIC X(15) VALUE X"0A002C000600010000000000127200".
+           05  FILLER PIC X(15) VALUE X"00FF00000000760000FF0000005265".
+           05  FILLER PIC X(15) VALUE X"642053717561726532000800020018".
+           05  FILLER PIC X(15) VALUE X"000E002D0006000100000000001472".
+           05  FILLER PIC X(15) VALUE X"0000FFFF000000760000FFFF000059".
+           05  FILLER PIC X(15) VALUE X"656C6C6F7720537175617265003000".
+           05  FILLER PIC X(15) VALUE X"0800020018000C002E000600010000".
+           05  FILLER PIC X(15) VALUE X"0000000067000000FF000000680000".
+           05  FILLER PIC X(15) VALUE X"00FF0000477265656E205371756172".
+           05  FILLER PIC X(15) VALUE X"6530000800020018000C002F000600".
+           05  FILLER PIC X(15) VALUE X"0100000000001B7200000000FF0000".
+           05  FILLER PIC X(15) VALUE X"6800000000FF00426C756520537075".
+           05  FILLER PIC X(4) VALUE X"61726500".
